@@ -1,0 +1,142 @@
+//  ============================ Typography ============================
+
+//webfont('RUB', 'rouble-webfont', 'normal')
+//Add fotn rub write .rub a - (a,b,c,d - change type font)
+
+//font(name,file,size)
+font('akrobat','akrobat',400)
+font('akrobatblack','akrobat',700)
+font('brush','streetbrush',400)
+
+$v-font =  'Akrobat', sans-serif
+
+typeSize(fontSm,font)
+	+below(768px)
+		font-size font px
+	font-size fontSm px
+
+
+/*
+font-size 14px
+@extend .type--sm
+
+font-size 20px
+@extend .type--main
+
+font-size 24px
+@extend .type--md
+
+font-size 30px
+@extend .type--lg
+
+font-size 40px
+@extend .type--xl
+*/
+
+.type--xs
+	typeSize(12,10)
+
+.type--sm
+	typeSize(14,12)
+
+.type--main
+	typeSize(16,14)
+
+.type--md
+	typeSize(18,15)
+
+.type--lg
+	typeSize(26,18)
+
+.type--xl
+	typeSize(36,20)
+
+.type--bold
+	font-weight bold
+
+.type--center
+	text-align center
+
+h1
+	@extend .type--xl
+h2
+	@extend .type--lg
+h3
+	@extend .type--main
+h4
+	@extend .type--sm
+h5
+	@extend .type--xs
+
+a
+	color $link-color
+	text-decoration: none
+	&:hover
+		color darken($link-color,20)
+	&:visiter
+		color darken($link-color,30)
+
+p
+	@extend .type--main
+
+.link--mark
+	color $blue
+	&:hover
+		color darken($mark,20)
+	&:visiter
+		color darken($mark,30)
+
+.link--main
+	color $link-color
+	hover-underline($link-color)
+	&:hover
+		color darken($link-color,20)
+	&:visiter
+		color darken($link-color,30)
+
+.link--text
+	color $link-color
+	text-decoration underline
+	&:hover
+		text-decoration none
+
+.type--mark
+	color $mark
+
+.text
+	p
+		line-height: 1.6
+		font-size: 24px
+		margin-bottom: 15px
+	ul
+		margin-bottom: 30px
+		li
+			line-height: 1.6
+			margin-bottom: 10px
+			&:last-child
+				margin-bottom: 0
+
+// icons
+.icon-row
+	f()
+	fw()
+	align-items center
+
+.icon--sm
+	size 16px
+
+.icon--md
+	size 24px
+
+.icon--left
+	margin-left: 10px
+
+.icon--right
+	margin-right: 10px
+
+.icon--mark
+	fill $mark
+
+.icon--gray
+	fill $gray
+// icons === end

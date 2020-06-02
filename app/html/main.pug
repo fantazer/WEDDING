@@ -1,0 +1,127 @@
+include block_html/_style.pug
+include block_html/_include.pug
+
+.page
+	+header()
+	.content
+		.header
+			.nav
+				a(href="#").nav__el
+					.nav__el-head About us
+					.nav__el-sub О нас
+				a(href="#").nav__el
+					.nav__el-head Services
+					.nav__el-sub Услуги
+				a(href="#").nav__el
+					.nav__el-head Portfolio
+					.nav__el-sub Портфолио
+				a(href="#").nav__el
+					.nav__el-head Contacts
+					.nav__el-sub Контакты
+			.logo
+				img(src="img/logo.png", alt="")
+
+		//section main
+		.section-main(style="background-image:url('img/main-bg.jpg')")
+			.section-main__info
+				.section-main__wrap
+					.section-main__title She said <span>yes...</span>
+					a(href="#").section-main__get Оставить заявку
+
+		//section about
+		.section.section-about
+			.bg-text.bg-text--about About us
+			.section-title
+				.section-title__head О нас
+				.section-title__text About us
+			.about-text.text
+				p Мы свадебное агентство “YES WEDDING”
+				p Самое главное для нас - это Вы и то особенное чувство, которое соединяет сердца и судьбы людей. Каждое событие для нас бриллиант, которому нужна красивая огранка, каждая история уникальна, каждый человек это целый мир и вместе с вами мы создадим то, что будет с трепетом вспоминаться долгие годы, а дни до события будут предвкушением волшебства.
+				p Наша бесконечная любовь к своему делу, 20 летний опыт организации мероприятий, проверенная база подрядчиков, большая команда, в которой каждый от дизайнера до технического директора творец, помогают делать нам ваши мероприятия особенными и впечатляющими.
+				p МЫ ТО, ЧТО НАДО!
+
+		//section service
+		.section.section-service
+			.main-cont
+				.service
+					.service-row
+						.service__el
+							.service__el-title Приглашение
+							.service__el-img(style="background-image:url('img/service-1.jpg')")
+						.service__el
+							.service__el-title Флористика
+							.service__el-img(style="background-image:url('img/service-2.jpg')")
+						.service__el
+							.service__el-title
+							.service__el-img(style="background-image:url('img/service-3.jpg')")
+						.service__el
+							.service__el-title Декорации
+							.service__el-img(style="background-image:url('img/service-4.jpg')")
+					.service-row.service-row--sm
+						.service__el
+							.service__el-img(style="background-image:url('img/service-5.jpg')")
+						.service__el
+							.service__el-img(style="background-image:url('img/service-6.jpg')")
+						.service__el
+							.service__el-img(style="background-image:url('img/service-7.jpg')")
+						.service__el
+							.service__el-img(style="background-image:url('img/service-8.jpg')")
+							.service__el-title.service__el-title--right Кавер-группы
+				.service-slogan Follow your heart...
+		.section.section--clear.section--overflow
+			.circle.circle--left(style="background-image:url('img/circle.png')")
+			.circle.circle--right(style="background-image:url('img/circle.png')")
+			.girl(style="background-image:url('img/girl.png')")
+			.bg-text.bg-text--about Service
+			.section-title
+				.section-title__head услуги и сервис
+				.section-title__text Service
+			.service-text.text
+				p Вы сможете наслаждаться предсвадебным периодом, а мы в это время:
+
+				p 1. Подберем и предложим вам площадки
+				p 2. Создадим несколько концепций мероприятия на ваш выбор
+
+				p 3. Предложим наполнение самого важного дня
+
+				p 4. Выберем лучших ведущих, кавер-групп, фотографов, видеографов
+
+				p 5. Организуем приглашение всех гостей
+
+				p 6. Подберем для вас лучший образ, визажиста и паркмахера
+
+				p 7. Займемся постановкой свадебного танца
+
+				p 8. Закажем торт, оформим декор и сделаем все то, что так важно для вас
+
+				p 9. Будем постоянно на связи.
+
+				p А в день свадьбы мы обязательно будем рядом, проследим за всеми деталями и будем переживать с вами эти волнительные минуты дня рождения вашей семьи и все обязательно будет хорошо.
+		//section portfolio
+		.section.section-portfolio
+			.section-title
+				.section-title__head портфолио
+				.section-title__text Portfolio
+			.main-cont
+				.portfolio-slider
+					- for (var i=0;i<4;i++)
+						.portfolio-el
+							.portfolio
+								.portfolio-info
+									.portfolio-title Свадьба Ивана и Eлены
+									.portfolio-text Невероятно нежная и стильная свадьба. Гармония, вот чем мы вдохновлляись создавая концепцию для этих ребят. Гармония чувств, цвета, света и тени, природы и города, красоты и изящества.Невероятно нежная и стильная свадьба. Гармония, вот чем мы вдохновлляись создавая концепцию для этих ребят. Гармония чувств, цвета, света и тени, природы и города, красоты и изящества.
+								.portfolio-img
+									a(href="img/event-lg-3.jpg" data-fancybox="images").portfolio-img__el.fancybox(style="background-image:url('img/event-lg-3.jpg')")
+									a(href="img/event-lg-2.jpg" data-fancybox="images").portfolio-img__el.fancybox(style="background-image:url('img/event-lg-2.jpg')")
+									a(href="img/event-lg-1.jpg" data-fancybox="images").portfolio-img__el.fancybox(style="background-image:url('img/event-lg-1.jpg')")
+
+				.portfolio-nav
+					.portfolio-nav__el.portfolio-nav__el--left
+						+icon("arrow-left","icon")
+					.portfolio-nav__el.portfolio-nav__el--right
+						+icon("arrow-right","icon")
+
+
+
++footer()
+include ./block_html/_script.pug

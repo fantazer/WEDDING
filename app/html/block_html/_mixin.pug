@@ -1,0 +1,37 @@
+mixin icon(name,cls)
+  svg(class=cls)
+    use(xlink:href="#" + name)
+
+mixin checkbox(text,disable)
+  .check-el
+    if disable
+      label.style-label.style-label--checkbox.style-label--disable
+        input(type="checkbox").style-input
+        .style-input-element
+          +icon("checked","icon-check")
+        .style-input-text=text
+    else
+      label.style-label.style-label--checkbox
+        input(type="checkbox").style-input
+        .style-input-element
+          +icon("checked","icon-check")
+        .style-input-text=text
+mixin radio(text,group,checked)
+  .check-el
+    label.style-label.style-label--radio
+      input(type="radio" name=group checked=checked).style-input
+      .style-input-element
+        .icon-radio
+      .style-input-text=text
+
+mixin incr(a,type)
+  - a = a || 1
+  .elements-icr-block
+    .incr(class=type?type:'')
+      .incr__minus.incr__nav
+        +icon("minus","icon")
+      .incr__val
+        span=a
+        .incr__val-coner
+      .incr__plus.incr__nav
+        +icon("plus","icon")
