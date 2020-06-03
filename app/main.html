@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="bower/slick-carousel/slick/slick.css" />
     <link rel="stylesheet" href="bower/slick-carousel/slick/slick-theme.css" />
     <link rel="stylesheet" href="bower/fancybox/dist/jquery.fancybox.css" />
+    <link rel="stylesheet" href="bower/animate.css/animate.css" />
+    <link rel="stylesheet" href="bower/aos/dist/aos.css" />
     <!--link(rel="stylesheet", href="bower/jquery-nice-select/css/nice-select.css")-->
     <!--link(rel="stylesheet", href="bower/ion.rangeSlider/css/ion.rangeSlider.css")-->
     <!--endbuild-->
@@ -33,7 +35,7 @@
         <!--block header end-->
         <div class="content">
             <div class="header">
-                <div class="nav">
+                <div class="nav" data-aos="fade-down" data-aos-delay="1000" data-aos-duration="2500">
                     <a class="nav__el" href="#">
                         <div class="nav__el-head">About us</div>
                         <div class="nav__el-sub">О нас</div>
@@ -51,25 +53,26 @@
                         <div class="nav__el-sub">Контакты</div>
                     </a>
                 </div>
-                <div class="logo">
+                <div class="logo nav" data-aos="fade" data-aos-delay="2000" data-aos-duration="2500">
                     <img src="img/logo.png" alt="" />
                 </div>
             </div>
             <!--section main-->
-            <div class="section-main" style="background-image:url('img/main-bg.jpg')">
+            <div class="section-main">
+                <div class="section-main-bg" style="background-image:url('img/main-bg.jpg')"></div>
                 <div class="section-main__info">
                     <div class="section-main__wrap">
-                        <div class="section-main__title">She said
+                        <div class="section-main__title" data-aos="fade" data-aos-delay="500" data-aos-duration="3000">She said
                             <span>yes...</span>
                         </div>
-                        <a class="section-main__get" href="#">Оставить заявку</a>
+                        <a class="section-main__get" href="#" data-aos="fade-up" data-aos-delay="3000" data-aos-duration="2000" data-aos-offset="-200">Оставить заявку</a>
                     </div>
                 </div>
             </div>
             <!--section about-->
             <div class="section section-about">
-                <div class="bg-text bg-text--about">About us</div>
-                <div class="section-title">
+                <div class="bg-text bg-text--about" data-aos="fade" data-aos-duration="3000">About us</div>
+                <div class="section-title" data-aos="fade" data-aos-duration="3000">
                     <div class="section-title__head">О нас</div>
                     <div class="section-title__text">About us</div>
                 </div>
@@ -85,7 +88,7 @@
             <!--section service-->
             <div class="section section-service">
                 <div class="main-cont">
-                    <div class="service">
+                    <div class="service" data-aos="fade" data-aos-duration="2000">
                         <div class="service-row">
                             <div class="service__el">
                                 <div class="service__el-title">Приглашение</div>
@@ -120,15 +123,16 @@
                             </div>
                         </div>
                     </div>
-                    <div class="service-slogan">Follow your heart...</div>
+                    <div class="service-slogan" data-aos="fade-right" data-aos-duration="3000">Follow your heart...</div>
                 </div>
             </div>
+            <!--section service description-->
             <div class="section section--clear section--overflow">
                 <div class="circle circle--left" style="background-image:url('img/circle.png')"></div>
                 <div class="circle circle--right" style="background-image:url('img/circle.png')"></div>
-                <div class="girl" style="background-image:url('img/girl.png')"></div>
-                <div class="bg-text bg-text--about">Service</div>
-                <div class="section-title">
+                <div class="girl" style="background-image:url('img/girl.png')" data-aos="fade" data-aos-delay="1000" data-aos-duration="3000" data-aos-offset="200"></div>
+                <div class="bg-text bg-text--about" data-aos="fade" data-aos-duration="3000">Service</div>
+                <div class="section-title" data-aos="fade" data-aos-duration="3000">
                     <div class="section-title__head">услуги и сервис</div>
                     <div class="section-title__text">Service</div>
                 </div>
@@ -149,20 +153,26 @@
             <!--section portfolio-->
             <div class="section section-portfolio">
                 <div class="section-title">
-                    <div class="section-title__head">портфолио</div>
-                    <div class="section-title__text">Portfolio</div>
+                    <div class="section-title__head" data-aos="fade" data-aos-duration="3000">портфолио</div>
+                    <div class="section-title__text" data-aos="fade" data-aos-duration="3000">Portfolio</div>
                 </div>
                 <div class="main-cont">
                     <div class="portfolio-slider">
                         <div class="portfolio-el">
                             <div class="portfolio">
-                                <div class="portfolio-info">
+                                <div class="portfolio-info" data-aos="fade" data-aos-duration="1000" data-aos-offset="-200">
                                     <div class="portfolio-title">Свадьба Ивана и Eлены</div>
                                     <div class="portfolio-text">Невероятно нежная и стильная свадьба. Гармония, вот чем мы вдохновлляись создавая концепцию для этих ребят. Гармония чувств, цвета, света и тени, природы и города, красоты и изящества.Невероятно нежная и стильная свадьба.
                                         Гармония, вот чем мы вдохновлляись создавая концепцию для этих ребят. Гармония чувств, цвета, света и тени, природы и города, красоты и изящества.</div>
                                 </div>
-                                <div class="portfolio-img">
-                                    <a class="portfolio-img__el fancybox" href="img/event-lg-3.jpg" data-fancybox="images" style="background-image:url('img/event-lg-3.jpg')"></a>
+                                <div class="portfolio-img" data-aos="fade" data-aos-duration="3000" data-aos-offset="-200">
+                                    <a class="portfolio-img__el fancybox" href="img/event-lg-3.jpg" data-fancybox="images" style="background-image:url('img/event-lg-3.jpg')">
+                                        <div class="portfolio-icon">
+                                            <svg class="icon ">
+                                                <use xlink:href="#search"></use>
+                                            </svg>
+                                        </div>
+                                    </a>
                                     <a class="portfolio-img__el fancybox" href="img/event-lg-2.jpg" data-fancybox="images" style="background-image:url('img/event-lg-2.jpg')"></a>
                                     <a class="portfolio-img__el fancybox" href="img/event-lg-1.jpg" data-fancybox="images" style="background-image:url('img/event-lg-1.jpg')"></a>
                                 </div>
@@ -170,13 +180,19 @@
                         </div>
                         <div class="portfolio-el">
                             <div class="portfolio">
-                                <div class="portfolio-info">
+                                <div class="portfolio-info" data-aos="fade" data-aos-duration="1000" data-aos-offset="-200">
                                     <div class="portfolio-title">Свадьба Ивана и Eлены</div>
                                     <div class="portfolio-text">Невероятно нежная и стильная свадьба. Гармония, вот чем мы вдохновлляись создавая концепцию для этих ребят. Гармония чувств, цвета, света и тени, природы и города, красоты и изящества.Невероятно нежная и стильная свадьба.
                                         Гармония, вот чем мы вдохновлляись создавая концепцию для этих ребят. Гармония чувств, цвета, света и тени, природы и города, красоты и изящества.</div>
                                 </div>
-                                <div class="portfolio-img">
-                                    <a class="portfolio-img__el fancybox" href="img/event-lg-3.jpg" data-fancybox="images" style="background-image:url('img/event-lg-3.jpg')"></a>
+                                <div class="portfolio-img" data-aos="fade" data-aos-duration="3000" data-aos-offset="-200">
+                                    <a class="portfolio-img__el fancybox" href="img/event-lg-3.jpg" data-fancybox="images" style="background-image:url('img/event-lg-3.jpg')">
+                                        <div class="portfolio-icon">
+                                            <svg class="icon ">
+                                                <use xlink:href="#search"></use>
+                                            </svg>
+                                        </div>
+                                    </a>
                                     <a class="portfolio-img__el fancybox" href="img/event-lg-2.jpg" data-fancybox="images" style="background-image:url('img/event-lg-2.jpg')"></a>
                                     <a class="portfolio-img__el fancybox" href="img/event-lg-1.jpg" data-fancybox="images" style="background-image:url('img/event-lg-1.jpg')"></a>
                                 </div>
@@ -184,13 +200,19 @@
                         </div>
                         <div class="portfolio-el">
                             <div class="portfolio">
-                                <div class="portfolio-info">
+                                <div class="portfolio-info" data-aos="fade" data-aos-duration="1000" data-aos-offset="-200">
                                     <div class="portfolio-title">Свадьба Ивана и Eлены</div>
                                     <div class="portfolio-text">Невероятно нежная и стильная свадьба. Гармония, вот чем мы вдохновлляись создавая концепцию для этих ребят. Гармония чувств, цвета, света и тени, природы и города, красоты и изящества.Невероятно нежная и стильная свадьба.
                                         Гармония, вот чем мы вдохновлляись создавая концепцию для этих ребят. Гармония чувств, цвета, света и тени, природы и города, красоты и изящества.</div>
                                 </div>
-                                <div class="portfolio-img">
-                                    <a class="portfolio-img__el fancybox" href="img/event-lg-3.jpg" data-fancybox="images" style="background-image:url('img/event-lg-3.jpg')"></a>
+                                <div class="portfolio-img" data-aos="fade" data-aos-duration="3000" data-aos-offset="-200">
+                                    <a class="portfolio-img__el fancybox" href="img/event-lg-3.jpg" data-fancybox="images" style="background-image:url('img/event-lg-3.jpg')">
+                                        <div class="portfolio-icon">
+                                            <svg class="icon ">
+                                                <use xlink:href="#search"></use>
+                                            </svg>
+                                        </div>
+                                    </a>
                                     <a class="portfolio-img__el fancybox" href="img/event-lg-2.jpg" data-fancybox="images" style="background-image:url('img/event-lg-2.jpg')"></a>
                                     <a class="portfolio-img__el fancybox" href="img/event-lg-1.jpg" data-fancybox="images" style="background-image:url('img/event-lg-1.jpg')"></a>
                                 </div>
@@ -198,13 +220,19 @@
                         </div>
                         <div class="portfolio-el">
                             <div class="portfolio">
-                                <div class="portfolio-info">
+                                <div class="portfolio-info" data-aos="fade" data-aos-duration="1000" data-aos-offset="-200">
                                     <div class="portfolio-title">Свадьба Ивана и Eлены</div>
                                     <div class="portfolio-text">Невероятно нежная и стильная свадьба. Гармония, вот чем мы вдохновлляись создавая концепцию для этих ребят. Гармония чувств, цвета, света и тени, природы и города, красоты и изящества.Невероятно нежная и стильная свадьба.
                                         Гармония, вот чем мы вдохновлляись создавая концепцию для этих ребят. Гармония чувств, цвета, света и тени, природы и города, красоты и изящества.</div>
                                 </div>
-                                <div class="portfolio-img">
-                                    <a class="portfolio-img__el fancybox" href="img/event-lg-3.jpg" data-fancybox="images" style="background-image:url('img/event-lg-3.jpg')"></a>
+                                <div class="portfolio-img" data-aos="fade" data-aos-duration="3000" data-aos-offset="-200">
+                                    <a class="portfolio-img__el fancybox" href="img/event-lg-3.jpg" data-fancybox="images" style="background-image:url('img/event-lg-3.jpg')">
+                                        <div class="portfolio-icon">
+                                            <svg class="icon ">
+                                                <use xlink:href="#search"></use>
+                                            </svg>
+                                        </div>
+                                    </a>
                                     <a class="portfolio-img__el fancybox" href="img/event-lg-2.jpg" data-fancybox="images" style="background-image:url('img/event-lg-2.jpg')"></a>
                                     <a class="portfolio-img__el fancybox" href="img/event-lg-1.jpg" data-fancybox="images" style="background-image:url('img/event-lg-1.jpg')"></a>
                                 </div>
@@ -225,6 +253,223 @@
                     </div>
                 </div>
             </div>
+            <!--step 01-->
+            <div class="section section-step section-step-01">
+                <div class="section-bg" style="background-image:url('img/bg-01.png')"></div>
+                <div class="section__info">
+                    <div class="section__wrap">
+                        <div class="section-title section-title--bottom">
+                            <div class="section-title__head" data-aos="fade" data-aos-duration="2000" data-aos-offset="-400">Концепция свадьбы</div>
+                            <div class="section-title__text" data-aos="fade" data-aos-duration="2000" data-aos-offset="-400">Your Wedding concept</div>
+                        </div>
+                        <div class="section-text text">
+                            <p>Мы уделяем концепции большое внимание. При ее создании нам важно соприкоснуться с вашими сердцами, понять характер вашей пары и предложить то, от чего загорятся глаза.Это целое искусство, которым мы непременно владеем.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--step 02-->
+            <div class="section-step section-step-02">
+                <div class="section-bg" style="background-image:url('img/bg-02.jpg')"></div>
+                <div class="bg-gradient bg-gradient--bottom"></div>
+                <div class="section__info">
+                    <div class="section__wrap">
+                        <div class="section-title section-title--bottom">
+                            <div class="section-title__head" data-aos="fade" data-aos-duration="3000" data-aos-offset="-400">дизайн и декор</div>
+                            <div class="section-title__text" data-aos="fade" data-aos-duration="3000" data-aos-offset="-400">Desing & Decor</div>
+                        </div>
+                        <div class="section-text text">
+                            <p>Через декор можно выразить самые невероятные чувства. Рассказать историю любви. Выразить эмоции и подарить их гостям. Создать атмосферу, которая отразит ваш стиль и подчеркнет индивидуальность вашего вкуса. Мы лишь поможем
+                                все это оформить и соединить воедино.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--step 03-->
+            <div class="section-step section-step-03">
+                <div class="section-bg" style="background-image:url('img/bg-03.jpg')"></div>
+                <div class="bg-gradient bg-gradient--top"></div>
+                <div class="section__info section__info--top">
+                    <div class="section__wrap">
+                        <div class="section-title section-title--bottom">
+                            <div class="section-title__head" data-aos="fade" data-aos-duration="3000" data-aos-offset="-400">фото и видео</div>
+                            <div class="section-title__text" data-aos="fade" data-aos-duration="3000" data-aos-offset="-400">Photo and video</div>
+                        </div>
+                        <div class="section-text text">
+                            <p>Выбирая фотографа, помимо его профессионализма нужно найти с ним контакт, те точки соприкосновения, которые позволят вам быть единым организмом в этот день. Профессионализм и комфорт обеспечат наилучший результат.</p>
+                            <p>Мы обязательно познакомим вас с людьми, под прицелами камер которых вы будете находиться весь день.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--step 04-->
+            <div class="section-step section-step-04">
+                <div class="section-bg" style="background-image:url('img/bg-04.jpg')"></div>
+                <div class="bg-gradient bg-gradient--top-black"></div>
+                <div class="section__info section__info--top">
+                    <div class="section__wrap section__wrap--white">
+                        <div class="section-title section-title--bottom">
+                            <div class="section-title__head" data-aos="fade" data-aos-duration="3000" data-aos-offset="-400">координатор</div>
+                            <div class="section-title__text" data-aos="fade" data-aos-duration="3000" data-aos-offset="-400">Coordinator</div>
+                        </div>
+                        <div class="section-text text">
+                            <p>Мы все помним, все контролируем, все знаем</p>
+                            <p>Мы уже предотвратили все, что могло произойти.</p>
+                            <p>Поэтому у вас есть время расслабиться, улыбнуться и выпить бокал шампанского.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--step 05-->
+            <div class="section-step section-step-04">
+                <div class="section-bg" style="background-image:url('img/bg-05.jpg')"></div>
+                <div class="section__info section__info--top">
+                    <div class="section__wrap section__wrap--white section__wrap--full">
+                        <div class="section-title section-title--bottom">
+                            <div class="section-title__head" data-aos="fade" data-aos-duration="3000" data-aos-offset="-400">Площадки</div>
+                            <div class="section-title__text" data-aos="fade" data-aos-duration="3000" data-aos-offset="-400">Loft</div>
+                        </div>
+                        <div class="section-text text">
+                            <p>Есть площадки с которыми мы особенно дружны
+                                <br>и любим делать мероприятия вместе</p>
+                        </div>
+                        <div class="company">
+                            <a class="company__el" href="#">
+                                <div class="company__el-img">
+                                    <img src="img/logo-ministerstvo.png" alt="" />
+                                </div>
+                                <div class="company__el-text">Loft-ministerstvo.ru</div>
+                            </a>
+                            <a class="company__el" href="#">
+                                <div class="company__el-img">
+                                    <img src="img/logo-aviator.png" alt="" />
+                                </div>
+                                <div class="company__el-text">loft-ministerstvo.ru/aviator</div>
+                            </a>
+                        </div>
+                        <a class="company-soc" href="#">
+                            <div class="company-soc__icon">
+                                <svg class="icon">
+                                    <use xlink:href="#instagram"></use>
+                                </svg>
+                            </div>
+                            <div class="company-soc__text">loftministerstvo</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--step 06-->
+            <div class="section-step section-step-06">
+                <div class="section-bg" style="background-image:url('img/bg-06.jpg')"></div>
+                <div class="bg-gradient bg-gradient--top-light"></div>
+                <div class="bg-gradient bg-gradient--bottom-light"></div>
+                <div class="section__info section__info--top">
+                    <div class="section__wrap section__wrap--white section__wrap--full">
+                        <div class="section-title section-title--bottom-extend">
+                            <div class="section-title__head" data-aos="fade" data-aos-duration="3000" data-aos-offset="-400">Кейтеринг</div>
+                            <div class="section-title__text" data-aos="fade" data-aos-duration="3000" data-aos-offset="-400">Catering</div>
+                        </div>
+                        <div class="section-text text">
+                            <p>За долгие годы работы мы знаем, что лучшее мероприятие то, на котором хорошо кормят. У нас есть собственная служба кейтеринга для того, чтобы мы точно знали, что на вашей свадьбе все будет вкусно.</p>
+                        </div>
+                        <div class="logo-kalina">
+                            <img src="img/logo-kalina.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--step 07-->
+            <div class="section-step section-step-07">
+                <div class="circle circle--right" style="background-image:url('img/circle.png')"></div>
+                <div class="lady" style="background-image:url('img/girl-2.png')" data-aos="fade" data-aos-delay="200" data-aos-duration="3000" data-aos-offset="200"></div>
+                <div class="section__info section__info--top">
+                    <div class="section__wrap section__wrap--full">
+                        <div class="section-title section-title--bottom-extend">
+                            <div class="section-title__head" data-aos="fade" data-aos-duration="3000" data-aos-offset="-400">Наши преимущества</div>
+                            <div class="section-title__text" data-aos="fade" data-aos-duration="3000" data-aos-offset="-400">Our advantages</div>
+                        </div>
+                        <div class="advant-wrap" data-aos="fade-up" data-aos-duration="2000" data-aos-offset="-400">
+                            <div class="advant">
+                                <div class="advant-title">We will do everything</div>
+                                <div class="advant-text">А вы без лишних усилий получите свадьбу мечты, довольных гостей, отличные фото и видео и обязательно вернетесь к нам отметить очередную годовщину свадьбы.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--staff-->
+            <div class="section section-portfolio">
+                <div class="section-title">
+                    <div class="section-title__head" data-aos="fade" data-aos-duration="3000">Наша команда. Знакомьтесь.</div>
+                    <div class="section-title__text" data-aos="fade" data-aos-duration="3000">Our Team</div>
+                </div>
+                <div class="main-cont">
+                    <div class="staff">
+                        <div class="staff-el">
+                            <div class="staff-el__img" style="background-image:url('img/olga.jpg')"></div>
+                            <div class="staff-el__name">Ольга</div>
+                            <div class="staff-el__location">Менеджер проектов</div>
+                            <div class="staff-el__info">Она знает все о площадках, мероприятиях, ведущих, артистах и ваших предпочтениях.</div>
+                        </div>
+                        <div class="staff-el">
+                            <div class="staff-el__img" style="background-image:url('img/lana.jpg')"></div>
+                            <div class="staff-el__name">Лана</div>
+                            <div class="staff-el__location">Дизайнер проектов</div>
+                            <div class="staff-el__info">В этих руках рождаются лучшие приглашения и логотипы.</div>
+                        </div>
+                        <div class="staff-el">
+                            <div class="staff-el__img" style="background-image:url('img/vladimir.jpg')"></div>
+                            <div class="staff-el__name">Владимир</div>
+                            <div class="staff-el__location">Технический директор</div>
+                            <div class="staff-el__info">Это страшно пунктуальный, щепетильный и въедливый человек, поэтому вся техническая часть будет на высшем уровне.</div>
+                        </div>
+                        <div class="staff-el">
+                            <div class="staff-el__img" style="background-image:url('img/ira.jpg')"></div>
+                            <div class="staff-el__name">Ирина</div>
+                            <div class="staff-el__location">Креативный менеджер</div>
+                            <div class="staff-el__info">В ее руках рождаются самые креативные концепции вашей свадьбы.</div>
+                        </div>
+                        <div class="staff-el">
+                            <div class="staff-el__img" style="background-image:url('img/igor.jpg')"></div>
+                            <div class="staff-el__name">Игорь</div>
+                            <div class="staff-el__location">Координатор</div>
+                            <div class="staff-el__info">Боец невидимого фронта. Он заботится о всех подрядчиках, скоординирует гостей по возникающим вопросам и будет лучшим другом жениха в этот вечер.</div>
+                        </div>
+                        <div class="staff-el">
+                            <div class="staff-el__img" style="background-image:url('img/carina.jpg')"></div>
+                            <div class="staff-el__name">Карина</div>
+                            <div class="staff-el__location">Банкетный менеджер</div>
+                            <div class="staff-el__info">Производит точнейшие расчеты необходимого количества еды и алкоголя.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-step--height section-step-07">
+                <div class="section-bg" style="background-image:url('img/bg-work.jpg')"></div>
+                <div class="section__info section__info--top">
+                    <div class="section__wrap">
+                        <div class="section-title section-title--bottom">
+                            <div class="section-title__head" data-aos="fade" data-aos-duration="3000" data-aos-offset="-400">Наша работа</div>
+                            <div class="section-title__text" data-aos="fade" data-aos-duration="3000" data-aos-offset="-400">Our Work</div>
+                        </div>
+                        <div class="work-text text">
+                            <p>Как мы строим нашу работу:</p>
+                            <ol>
+                                <li>Заявка</li>
+                                <li>Знакомство и встреча</li>
+                                <li>Планирование бюджета</li>
+                                <li>Заключение договора</li>
+                                <li>Подбор площадок</li>
+                                <li>Концепция мероприятия</li>
+                                <li>Подготовка мероприятия</li>
+                                <li>Финализация сметы</li>
+                                <li>Сопровождение мероприятия</li>
+                                <li>Встреча, обсуждение мероприятия. Обнимашки.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!--block footer-->
@@ -233,6 +478,7 @@
     <script src="bower/jquery/dist/jquery.js"></script>
     <script src="bower/slick-carousel/slick/slick.js"></script>
     <script src="bower/fancybox/dist/jquery.fancybox.js"></script>
+    <script src="bower/aos/dist/aos.js"></script>
     <!--script(src='bower/jquery.nicescroll/jquery.nicescroll.min.js')-->
     <!--script(src='bower/jquery-nice-select/js/jquery.nice-select.min.js')-->
     <!--script(src="bower/ion.rangeSlider/js/ion.rangeSlider.js")-->

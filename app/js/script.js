@@ -113,4 +113,12 @@ $(document).ready(function () {
 		$(".portfolio-slider").slick('slickPrev');
 	});
 	// custom arrow el === end
+
+	AOS.init({
+		offset: 140,
+		mirror: "true",
+		delay:100
+	});
+
+
 });

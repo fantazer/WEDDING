@@ -5,7 +5,7 @@ include block_html/_include.pug
 	+header()
 	.content
 		.header
-			.nav
+			.nav(data-aos="fade-down" data-aos-delay="1000" data-aos-duration="2500")
 				a(href="#").nav__el
 					.nav__el-head About us
 					.nav__el-sub О нас
@@ -18,20 +18,21 @@ include block_html/_include.pug
 				a(href="#").nav__el
 					.nav__el-head Contacts
 					.nav__el-sub Контакты
-			.logo
+			.logo.nav(data-aos="fade" data-aos-delay="2000" data-aos-duration="2500")
 				img(src="img/logo.png", alt="")
 
 		//section main
-		.section-main(style="background-image:url('img/main-bg.jpg')")
+		.section-main
+			.section-main-bg(style="background-image:url('img/main-bg.jpg')")
 			.section-main__info
 				.section-main__wrap
-					.section-main__title She said <span>yes...</span>
-					a(href="#").section-main__get Оставить заявку
+					.section-main__title(data-aos="fade"  data-aos-delay="500" data-aos-duration="3000") She said <span>yes...</span>
+					a(href="#" data-aos="fade-up" data-aos-delay="3000" data-aos-duration="2000" data-aos-offset="-200").section-main__get Оставить заявку
 
 		//section about
 		.section.section-about
-			.bg-text.bg-text--about About us
-			.section-title
+			.bg-text.bg-text--about(data-aos="fade"  data-aos-duration="3000") About us
+			.section-title(data-aos="fade"  data-aos-duration="3000")
 				.section-title__head О нас
 				.section-title__text About us
 			.about-text.text
@@ -43,7 +44,7 @@ include block_html/_include.pug
 		//section service
 		.section.section-service
 			.main-cont
-				.service
+				.service(data-aos="fade"  data-aos-duration="2000")
 					.service-row
 						.service__el
 							.service__el-title Приглашение
@@ -67,13 +68,17 @@ include block_html/_include.pug
 						.service__el
 							.service__el-img(style="background-image:url('img/service-8.jpg')")
 							.service__el-title.service__el-title--right Кавер-группы
-				.service-slogan Follow your heart...
+				.service-slogan(data-aos="fade-right"  data-aos-duration="3000") Follow your heart...
+
+		//section service description
 		.section.section--clear.section--overflow
 			.circle.circle--left(style="background-image:url('img/circle.png')")
 			.circle.circle--right(style="background-image:url('img/circle.png')")
-			.girl(style="background-image:url('img/girl.png')")
-			.bg-text.bg-text--about Service
-			.section-title
+
+			.girl(style="background-image:url('img/girl.png')" data-aos="fade"  data-aos-delay="1000" data-aos-duration="3000" data-aos-offset="200")
+
+			.bg-text.bg-text--about(data-aos="fade"  data-aos-duration="3000") Service
+			.section-title(data-aos="fade"  data-aos-duration="3000")
 				.section-title__head услуги и сервис
 				.section-title__text Service
 			.service-text.text
@@ -97,29 +102,205 @@ include block_html/_include.pug
 				p 9. Будем постоянно на связи.
 
 				p А в день свадьбы мы обязательно будем рядом, проследим за всеми деталями и будем переживать с вами эти волнительные минуты дня рождения вашей семьи и все обязательно будет хорошо.
+
 		//section portfolio
 		.section.section-portfolio
 			.section-title
-				.section-title__head портфолио
-				.section-title__text Portfolio
+				.section-title__head(data-aos="fade"  data-aos-duration="3000") портфолио
+				.section-title__text(data-aos="fade"  data-aos-duration="3000") Portfolio
 			.main-cont
 				.portfolio-slider
 					- for (var i=0;i<4;i++)
 						.portfolio-el
 							.portfolio
-								.portfolio-info
+								.portfolio-info(data-aos="fade"  data-aos-duration="1000" data-aos-offset="-200")
 									.portfolio-title Свадьба Ивана и Eлены
 									.portfolio-text Невероятно нежная и стильная свадьба. Гармония, вот чем мы вдохновлляись создавая концепцию для этих ребят. Гармония чувств, цвета, света и тени, природы и города, красоты и изящества.Невероятно нежная и стильная свадьба. Гармония, вот чем мы вдохновлляись создавая концепцию для этих ребят. Гармония чувств, цвета, света и тени, природы и города, красоты и изящества.
-								.portfolio-img
-									a(href="img/event-lg-3.jpg" data-fancybox="images").portfolio-img__el.fancybox(style="background-image:url('img/event-lg-3.jpg')")
-									a(href="img/event-lg-2.jpg" data-fancybox="images").portfolio-img__el.fancybox(style="background-image:url('img/event-lg-2.jpg')")
-									a(href="img/event-lg-1.jpg" data-fancybox="images").portfolio-img__el.fancybox(style="background-image:url('img/event-lg-1.jpg')")
+
+								.portfolio-img(data-aos="fade"  data-aos-duration="3000" data-aos-offset="-200")
+									a(href="img/event-lg-3.jpg" data-fancybox="images" style="background-image:url('img/event-lg-3.jpg')").portfolio-img__el.fancybox
+										.portfolio-icon
+											+icon("search","icon ")
+									a(href="img/event-lg-2.jpg" data-fancybox="images" style="background-image:url('img/event-lg-2.jpg')").portfolio-img__el.fancybox
+									a(href="img/event-lg-1.jpg" data-fancybox="images" style="background-image:url('img/event-lg-1.jpg')").portfolio-img__el.fancybox
 
 				.portfolio-nav
 					.portfolio-nav__el.portfolio-nav__el--left
 						+icon("arrow-left","icon")
 					.portfolio-nav__el.portfolio-nav__el--right
 						+icon("arrow-right","icon")
+
+		//step 01
+		.section.section-step.section-step-01
+			.section-bg(style="background-image:url('img/bg-01.png')")
+			.section__info
+				.section__wrap
+					.section-title.section-title--bottom
+						.section-title__head(data-aos="fade" data-aos-duration="2000" data-aos-offset="-400") Концепция свадьбы
+						.section-title__text(data-aos="fade" data-aos-duration="2000" data-aos-offset="-400") Your Wedding concept
+					.section-text.text
+						p Мы уделяем концепции большое внимание. При ее создании нам важно соприкоснуться с вашими сердцами, понять характер вашей пары и предложить то, от чего загорятся глаза.Это целое искусство, которым мы непременно владеем.
+
+		//step 02
+		.section-step.section-step-02
+			.section-bg(style="background-image:url('img/bg-02.jpg')")
+			.bg-gradient.bg-gradient--bottom
+			.section__info
+				.section__wrap
+					.section-title.section-title--bottom
+						.section-title__head(data-aos="fade" data-aos-duration="3000" data-aos-offset="-400") дизайн и декор
+						.section-title__text(data-aos="fade" data-aos-duration="3000" data-aos-offset="-400") Desing & Decor
+					.section-text.text
+						p Через декор можно выразить самые невероятные чувства. Рассказать историю любви. Выразить эмоции и подарить их гостям. Создать атмосферу, которая отразит ваш стиль и подчеркнет индивидуальность вашего вкуса. Мы лишь поможем все это оформить и соединить воедино.
+
+		//step 03
+		.section-step.section-step-03
+			.section-bg(style="background-image:url('img/bg-03.jpg')")
+			.bg-gradient.bg-gradient--top
+			.section__info.section__info--top
+				.section__wrap
+					.section-title.section-title--bottom
+						.section-title__head(data-aos="fade" data-aos-duration="3000" data-aos-offset="-400") фото и видео
+						.section-title__text(data-aos="fade" data-aos-duration="3000" data-aos-offset="-400") Photo and video
+					.section-text.text
+						p Выбирая фотографа, помимо его профессионализма нужно найти с ним контакт, те точки соприкосновения, которые позволят вам быть единым организмом в этот день. Профессионализм и комфорт обеспечат наилучший результат.
+						p Мы обязательно познакомим вас с людьми, под прицелами камер которых вы будете находиться весь день.
+
+		//step 04
+		.section-step.section-step-04
+			.section-bg(style="background-image:url('img/bg-04.jpg')")
+			.bg-gradient.bg-gradient--top-black
+			.section__info.section__info--top
+				.section__wrap.section__wrap--white
+					.section-title.section-title--bottom
+						.section-title__head(data-aos="fade" data-aos-duration="3000" data-aos-offset="-400") координатор
+						.section-title__text(data-aos="fade" data-aos-duration="3000" data-aos-offset="-400") Coordinator
+					.section-text.text
+						p Мы все помним, все контролируем, все знаем
+
+						p Мы уже предотвратили все, что могло произойти.
+
+						p Поэтому у вас есть время расслабиться, улыбнуться и выпить бокал шампанского.
+
+		//step 05
+		.section-step.section-step-04
+			.section-bg(style="background-image:url('img/bg-05.jpg')")
+			.section__info.section__info--top
+				.section__wrap.section__wrap--white.section__wrap--full
+					.section-title.section-title--bottom
+						.section-title__head(data-aos="fade" data-aos-duration="3000" data-aos-offset="-400") Площадки
+						.section-title__text(data-aos="fade" data-aos-duration="3000" data-aos-offset="-400") Loft
+					.section-text.text
+						p Есть площадки с которыми мы особенно дружны<br> и любим делать мероприятия вместе
+					.company
+						a(href="#").company__el
+							.company__el-img
+								img(src="img/logo-ministerstvo.png", alt="")
+							.company__el-text Loft-ministerstvo.ru
+						a(href="#").company__el
+							.company__el-img
+								img(src="img/logo-aviator.png", alt="")
+							.company__el-text loft-ministerstvo.ru/aviator
+
+					a(href="#").company-soc
+						.company-soc__icon
+							+icon("instagram","icon")
+						.company-soc__text loftministerstvo
+		//step 06
+		.section-step.section-step-06
+			.section-bg(style="background-image:url('img/bg-06.jpg')")
+			.bg-gradient.bg-gradient--top-light
+			.bg-gradient.bg-gradient--bottom-light
+			.section__info.section__info--top
+				.section__wrap.section__wrap--white.section__wrap--full
+					.section-title.section-title--bottom-extend
+						.section-title__head(data-aos="fade" data-aos-duration="3000" data-aos-offset="-400") Кейтеринг
+						.section-title__text(data-aos="fade" data-aos-duration="3000" data-aos-offset="-400") Catering
+					.section-text.text
+						p За долгие годы работы мы знаем, что лучшее мероприятие то, на котором хорошо кормят. У нас есть собственная служба кейтеринга для того, чтобы мы точно знали, что на вашей свадьбе все будет вкусно.
+
+					.logo-kalina
+						img(src="img/logo-kalina.png", alt="")
+		//step 07
+		.section-step.section-step-07
+			.circle.circle--right(style="background-image:url('img/circle.png')")
+			.lady(style="background-image:url('img/girl-2.png')" data-aos="fade"  data-aos-delay="200" data-aos-duration="3000" data-aos-offset="200")
+			.section__info.section__info--top
+				.section__wrap.section__wrap--full
+					.section-title.section-title--bottom-extend
+						.section-title__head(data-aos="fade" data-aos-duration="3000" data-aos-offset="-400") Наши преимущества
+						.section-title__text(data-aos="fade" data-aos-duration="3000" data-aos-offset="-400") Our advantages
+					.advant-wrap(data-aos="fade-up" data-aos-duration="2000" data-aos-offset="-400")
+						.advant
+							.advant-title We will do everything
+							.advant-text А вы без лишних усилий получите свадьбу мечты, довольных гостей, отличные фото и видео и обязательно вернетесь к нам отметить очередную годовщину свадьбы.
+
+		//staff
+		.section.section-portfolio
+			.section-title
+				.section-title__head(data-aos="fade"  data-aos-duration="3000") Наша команда. Знакомьтесь.
+				.section-title__text(data-aos="fade"  data-aos-duration="3000") Our Team
+			.main-cont
+				.staff
+					.staff-el
+						.staff-el__img(style="background-image:url('img/olga.jpg')")
+						.staff-el__name Ольга
+						.staff-el__location Менеджер проектов
+						.staff-el__info Она знает все о площадках, мероприятиях, ведущих, артистах и ваших предпочтениях.
+					.staff-el
+						.staff-el__img(style="background-image:url('img/lana.jpg')")
+						.staff-el__name Лана
+						.staff-el__location Дизайнер проектов
+						.staff-el__info В этих руках рождаются лучшие приглашения и логотипы.
+					.staff-el
+						.staff-el__img(style="background-image:url('img/vladimir.jpg')")
+						.staff-el__name Владимир
+						.staff-el__location Технический директор
+						.staff-el__info Это страшно пунктуальный, щепетильный и въедливый человек, поэтому вся техническая часть будет на высшем уровне.
+					.staff-el
+						.staff-el__img(style="background-image:url('img/ira.jpg')")
+						.staff-el__name Ирина
+						.staff-el__location Креативный менеджер
+						.staff-el__info В ее руках рождаются самые креативные концепции вашей свадьбы.
+					.staff-el
+						.staff-el__img(style="background-image:url('img/igor.jpg')")
+						.staff-el__name Игорь
+						.staff-el__location Координатор
+						.staff-el__info Боец невидимого фронта. Он заботится о всех подрядчиках, скоординирует гостей по возникающим вопросам и будет лучшим другом жениха в этот вечер.
+					.staff-el
+						.staff-el__img(style="background-image:url('img/carina.jpg')")
+						.staff-el__name Карина
+						.staff-el__location Банкетный менеджер
+						.staff-el__info Производит точнейшие расчеты необходимого количества еды и алкоголя.
+		.section-step--height.section-step-07
+			.section-bg(style="background-image:url('img/bg-work.jpg')")
+			.section__info.section__info--top
+				.section__wrap
+					.section-title.section-title--bottom
+						.section-title__head(data-aos="fade" data-aos-duration="3000" data-aos-offset="-400") Наша работа
+
+						.section-title__text(data-aos="fade" data-aos-duration="3000" data-aos-offset="-400") Our Work
+					.work-text.text
+						p Как мы строим нашу работу:
+						ol
+							li Заявка
+							li Знакомство и встреча
+							li Планирование бюджета
+							li Заключение договора
+							li Подбор площадок
+							li Концепция мероприятия
+							li Подготовка мероприятия
+							li Финализация сметы
+							li Сопровождение мероприятия
+							li Встреча, обсуждение мероприятия. Обнимашки.
+
+
+
+
+
+
+
+
 
 
 

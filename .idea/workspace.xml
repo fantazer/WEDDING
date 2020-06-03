@@ -2,49 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33fc4985-0812-4917-a972-022b8742b981" name="Default" comment="fix color input">
-      <change afterPath="$PROJECT_DIR$/app/fonts/Akrobat.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/fonts/Akrobat.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/fonts/Akrobatblack.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/fonts/Akrobatblack.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/fonts/Streetbrush.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/fonts/Streetbrush.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/img/event-lg-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/img/event-lg-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/img/event-lg-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/img/main-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/img/bg-03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/img/bg-05.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/img/bg-06.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/img/bg-work.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/img/carina.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/img/girl-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/img/igor.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/img/ira.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/img/lana.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/img/logo-kalina.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/img/olga.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/img/svg/instagram.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/img/vladimir.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/style.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/variable/_function.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/variable/_function.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/variable/config/_btn.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/variable/config/_btn.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/variable/config/_color.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/variable/config/_color.styl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/variable/config/_typography.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/variable/config/_typography.styl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/elements.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/elements.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/fonts/rouble-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/fonts/rouble-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/fonts/rouble-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/fonts/rouble-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/fonts/rouble-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/error-404.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/error-404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/error-500.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/error-500.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/html/block_html/_script.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/block_html/_script.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/html/block_html/_style.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/block_html/_style.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/html/block_html/_svg.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/block_html/_svg.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/html/main.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/main.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/img/css/sprite.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/css/sprite.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/img/pack.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/pack.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/screen/app/index.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/index.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/screen/app/main.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/main.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/img/sprite.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/sprite.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/svg/arrow-down-fat.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/svg/arrow-down-fat.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/svg/arrow-up-fat.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/svg/arrow-up-fat.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/svg/soc-facebook-box.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/svg/soc-facebook-box.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/svg/soc-telegram.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/svg/soc-telegram.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/svg/soc-whatsapp.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/svg/soc-whatsapp.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/svg/soc-youtube.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/svg/soc-youtube.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/img/svg/sprite.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/svg/sprite.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bower.json" beforeDir="false" afterPath="$PROJECT_DIR$/bower.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/pack.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/pack.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/sprite.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/sprite.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modal.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/modal.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,17 +61,17 @@
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="clone&#9;ACTION&#9;Git.Clone" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/img" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\PROJECT\WORK\WEDDING" />
       <recent name="E:\PROJECT\WORK\WEDDING\app\img" />
+      <recent name="E:\PROJECT\WORK\WEDDING\app\img\svg" />
+      <recent name="E:\PROJECT\WORK\WEDDING\app\bower" />
+      <recent name="E:\PROJECT\WORK\WEDDING" />
       <recent name="E:\PROJECT\WORK\WEDDING\app\fonts" />
-      <recent name="E:\PROJECT\STEND\FRONTEND\app\html" />
-      <recent name="E:\PROJECT\STEND\FRONTEND\dist\js" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -162,7 +153,9 @@
       <workItem from="1589894377476" duration="82000" />
       <workItem from="1590492233361" duration="6105000" />
       <workItem from="1590574811300" duration="4680000" />
-      <workItem from="1591100607518" duration="13340000" />
+      <workItem from="1591100607518" duration="14505000" />
+      <workItem from="1591120151707" duration="931000" />
+      <workItem from="1591188163392" duration="17458000" />
     </task>
     <task id="LOCAL-00001" summary="fix browsersynk">
       <created>1515935102048</created>
@@ -501,10 +494,18 @@
     </state>
     <state x="-1753" y="-103" key="CommitChangelistDialog2/-2560.-256.2560.1400/0.0.1920.1040/1920.166.1280.984@-2560.-256.2560.1400" timestamp="1589374749464" />
     <state x="-1753" y="-103" key="CommitChangelistDialog2/0.0.1920.1040/1920.166.1280.984/-2560.-256.2560.1400@-2560.-256.2560.1400" timestamp="1590582207066" />
-    <state x="-1500" y="199" key="FileChooserDialogImpl" timestamp="1589364217162">
+    <state x="-1500" y="199" key="FileChooserDialogImpl" timestamp="1591189046200">
       <screen x="-2560" y="-256" width="2560" height="1400" />
     </state>
-    <state x="-1500" y="199" key="FileChooserDialogImpl/-2560.-256.2560.1400/0.0.1920.1040/1920.166.1280.984@-2560.-256.2560.1400" timestamp="1589364217162" />
+    <state x="-1500" y="199" key="FileChooserDialogImpl/-2560.-256.2560.1400/0.0.1920.1040/1920.166.1280.984@-2560.-256.2560.1400" timestamp="1591189046200" />
+    <state x="-1407" y="345" key="Github.ShareDialog" timestamp="1591117422858">
+      <screen x="-2560" y="-256" width="2560" height="1400" />
+    </state>
+    <state x="-1407" y="345" key="Github.ShareDialog/-2560.-256.2560.1400/0.0.1920.1040/1920.166.1280.984@-2560.-256.2560.1400" timestamp="1591117422858" />
+    <state x="-1453" y="165" key="Github.UntrackedFilesDialog" timestamp="1591117440858">
+      <screen x="-2560" y="-256" width="2560" height="1400" />
+    </state>
+    <state x="-1453" y="165" key="Github.UntrackedFilesDialog/-2560.-256.2560.1400/0.0.1920.1040/1920.166.1280.984@-2560.-256.2560.1400" timestamp="1591117440858" />
     <state x="-1779" y="87" key="SettingsEditor" timestamp="1591117406149">
       <screen x="-2560" y="-256" width="2560" height="1400" />
     </state>
@@ -514,14 +515,14 @@
     </state>
     <state x="-2560" y="-256" key="Vcs.Push.Dialog.v2/-2560.-256.2560.1400/0.0.1920.1040/1920.166.1280.984@-2560.-256.2560.1400" timestamp="1589374754599" />
     <state x="-2560" y="-256" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.166.1280.984/-2560.-256.2560.1400@-2560.-256.2560.1400" timestamp="1590582212926" />
-    <state x="-1566" y="181" width="571" height="526" key="find.popup" timestamp="1591111820665">
+    <state x="-1566" y="181" width="571" height="526" key="find.popup" timestamp="1591196708338">
       <screen x="-2560" y="-256" width="2560" height="1400" />
     </state>
-    <state x="-1566" y="181" width="571" height="526" key="find.popup/-2560.-256.2560.1400/0.0.1920.1040/1920.166.1280.984@-2560.-256.2560.1400" timestamp="1591111820665" />
-    <state x="-1617" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1591115180604">
+    <state x="-1566" y="181" width="571" height="526" key="find.popup/-2560.-256.2560.1400/0.0.1920.1040/1920.166.1280.984@-2560.-256.2560.1400" timestamp="1591196708338" />
+    <state x="-1617" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1591189098673">
       <screen x="-2560" y="-256" width="2560" height="1400" />
     </state>
-    <state x="-1617" y="59" width="672" height="678" key="search.everywhere.popup/-2560.-256.2560.1400/0.0.1920.1040/1920.166.1280.984@-2560.-256.2560.1400" timestamp="1591115180604" />
+    <state x="-1617" y="59" width="672" height="678" key="search.everywhere.popup/-2560.-256.2560.1400/0.0.1920.1040/1920.166.1280.984@-2560.-256.2560.1400" timestamp="1591189098673" />
     <state x="-1617" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.166.1280.984/-2560.-256.2560.1400@-2560.-256.2560.1400" timestamp="1590582171196" />
   </component>
 </project>
