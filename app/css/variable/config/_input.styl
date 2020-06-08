@@ -1,17 +1,17 @@
 // === Inputs ===
 .input,.textarea,.select
-	padding 18px 15px
-	border 1px solid $border-color
+	padding 10px
+	border 0
 	resize: none
 	outline: 0 !important
-	border-radius 4px
 	font-family $v-font
 	display block!important
 	placeholder(#888888)
-	background: #f6f6f6
+	background: white
+	border 1px solid transparent
 	tr(all)
 	&:focus
-		border 1px solid $mark
+		border 1px solid black
 		background: white
 
 .input--disable
@@ -97,22 +97,23 @@
 
 //form
 .input-row
-	margin-bottom: 20px
+	margin-bottom: 30px
 	.input
 		width: 100%
 .input-row__title
 	margin-bottom: 10px
 
 .input-row--error
+	margin-bottom: 10px
 	.input
-		border-color red
-		color red
+		border-color $mark
+		color $mark
 	.error-msg
 		display block
 	.error
-		color red
+		color $mark
 	.style-input-element
-		border 1px solid red
+		border 1px solid $mark
 
 .error-msg
 	color red

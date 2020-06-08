@@ -39,14 +39,21 @@ body
 		transform: translate3d(0, 0, 0)
 
 .shrink
-	position fixed
 	top 0
 	left 0
-	background white
 	width 100%
 	margin 0
+	z-index 2000
 	animation:  slideInDown  1s 1 ease-in-out;
-	z-index 1000
+	.head-toggle
+		display: flex
+		position relative
+	.nav__el
+		display none
+	.logo
+		+below(768px)
+			size 50px
+		size 80px
 // animate top menu === end
 
 // error
@@ -198,14 +205,13 @@ body
 	line-height: 1.6
 
 
-.modal-send
-	@extend .btn--md
-	@extend .btn--mark
-	width: 100%
+
 // modal === end
 
 
 .header
+	+below(768px)
+		padding: 10px
 	position: fixed
 	top 0
 	left 0
@@ -224,18 +230,23 @@ body
 	left 0
 	width: 100%
 	height: 100%
-	background-attachment: fixed
+	//background-attachment: fixed
 	animation: scale 70s linear infinite
 .nav
 	f()
 	align-items center
 .nav__el
+	+below(1024px)
+		display none
 	margin-right: 30px
 	flex(mid)
 	fl()
 	tr()
+	margin-top: -40px
 	&:hover
 		color $mark
+//.nav__el--active
+//	color $mark!important
 .nav__el-head
 	margin-bottom: 10px
 	font-family:brush
@@ -246,11 +257,16 @@ body
 	up()
 
 .logo
-	size 80px
+	+below(768px)
+		size 50px
+	size 140px
 .section-main__title
+	+below(1024px)
+		font-size 15vw
+	+below(640px)
+		font-size: 60px
 	font-family: brush
 	font-size 10vw
-
 	span
 		display inline-block
 		transform translateY(20%)
@@ -264,6 +280,8 @@ body
 	align-items center
 	position relative
 .section-main__wrap
+	+below(640px)
+		margin-bottom: 25%
 	f()
 	fl()
 	align-items center
@@ -274,8 +292,10 @@ body
 	@extend .btn--md
 	@extend .btn--light
 	letter-spacing 5px
-
+	z-index 5
 .bg-text
+	+below(768px)
+		display none
 	color white
 	position absolute
 	font-size: 18vw
@@ -283,13 +303,25 @@ body
 	opacity: .4
 	top 10%
 	left 15%
+
+.bg-text--light
+	opacity: .4!important
+
 .section
+	+below(640px)
+		padding: 30px 0
 	padding: 5% 0
 	position relative
+	z-index 1
 .section--clear
 	padding: 5% 0
 
+.section--contact
+	padding 0
+
 .section-title
+	+below(768px)
+		margin-bottom: 10px
 	text-align center
 	margin-bottom: 60px
 	z-index 5
@@ -302,22 +334,28 @@ body
 	margin-bottom: 20px
 	up()
 .section-title__text
+	+below(768px)
+		font-size: 20vw
 	font-family: brush
 	font-size: 8vw
 	position relative
 	line-height: 1
 	//color #f57c9e
 	//color $mark
+
 .about-text
 	center(1000px,10px)
 	text-align center
 
 
 .service-row
-	display: grid
-	grid-gap 30px
-	grid-template-columns: repeat(4, 1fr)
+	+below(768px)
+		column-count: 2
+		column-gap: 20px
 	margin-bottom: 30px
+	column-count: 4
+	column-gap: 30px
+
 .service-row--sm
 	.service__el-img
 		padding: 35% 10%
@@ -326,6 +364,14 @@ body
 .service__el-img
 	bg-full()
 	padding: 70% 10%
+
+.service__el
+	+below(768px)
+		margin-bottom: 20px
+	margin-bottom: 70px
+.service__el--sm
+	.service__el-img
+		padding: 40% 10%
 
 .service__el-title
 	margin-bottom: 20px
@@ -336,6 +382,9 @@ body
 	text-align: right
 
 .service-slogan
+	+below(768px)
+		font-size: 15vw
+
 	text-align center
 	color white
 	font-family brush
@@ -347,6 +396,8 @@ body
 		font-size: 18px
 
 .girl
+	+below(640px)
+		display none
 	position absolute
 	bottom 0
 	right: 5%
@@ -354,10 +405,14 @@ body
 	padding: 30% 20%
 
 .circle
+	+below(640px)
+		padding: 60%
 	position absolute
 	bg-full()
 	padding: 28% 28%
 .circle--left
+	+below(640px)
+		animation initial!important
 	top 50%
 	left -30%
 	animation: rotating 200s linear infinite
@@ -369,61 +424,113 @@ body
 
 
 .portfolio
-	f()
-	justify-content space-between
-	align-items center
-	margin-top: 50px
-.portfolio-el
-	padding: 40px 0
+	+below(768px)
+		fw()
+		margin-top: 0
+
+
+
 .portfolio-info
-	width: 40%
+	+below(768px)
+		width: 100%
+		margin-bottom: 0
+	width: 60%
+	flex(mid)
+	fl()
+	margin 0 auto
 
 .portfolio-title
+	+below(768px)
+		font-size: 28px
 	@extend .type--xl
 	margin-bottom: 20px
 	font-weight: 700
 .portfolio-text
-	font-size: 18px
+	+below(768px)
+		font-size: 16px
+		margin-bottom: 30px
+	font-size: 22px
 	line-height: 1.6
-
+	text-align center
+	margin-bottom: 50px
 .portfolio-img
-	width: 60%
+	+below(768px)
+		width: 100%
+	+below(640px)
+		grid-gap 10px
 	flex(mid)
 	position relative
-	padding: 20% 10%
+	display: grid
+	grid-gap 30px
+	grid-template-columns: repeat(3, 1fr)
+
+.portfolio-slider
+	position relative
 .portfolio-img__el
+	+below(640px)
+		display none
+		&:nth-child(1)
+			display block
+		&:nth-child(2)
+			display block
+		&:nth-child(3)
+			display block
+		&:nth-child(4)
+			display block
+		&:nth-child(5)
+			display block
+		&:nth-child(6)
+			display block
 	bg-full()
 	padding: 30% 40%
-	position absolute
-	border 10px solid white
-	top 0
-	bsh()
 	cp()
 	tr()
 	transform scale(1)
+
 	//-webkit-filter unquote("grayscale(100%)")
 	&:hover
 		box-shadow 0px 3px 36px #b7b3b3
-		-webkit-filter unquote("grayscale(0%)")
-	&:nth-child(1)
-		z-index 5
-	&:nth-child(2)
-		transform rotate(5deg)
-	&:nth-child(3)
-		transform rotate(10deg)
+		//transform scale(1.3)
+		z-index 10
+
 
 .portfolio-nav
 	f()
-	margin: 40px 0
+	position absolute
+	top 100px
+	left 0
+	width: 100%
+	flex(between)
+	+below(768px)
+		position relative
+		top 0
+		flex(mid)
 .portfolio-nav__el
-	background: white
+	+below(768px)
+		background: white
+		span
+			display none
+
 	padding: 15px
 	tr()
 	cp()
+	flex(mid)
+	fl()
+	opacity: .8
 	.icon
-		size 18px
+		+below(768px)
+			size 18px
+			margin-bottom: 0
+		size 48px
+		margin-bottom: 10px
 	&:hover
-		background: darken(white,5)
+		opacity: 1
+
+.portfolio-nav__el--left
+	left 10%
+
+.portfolio-nav__el--right
+	right 10%
 
 .portfolio-icon
 	position absolute
@@ -511,7 +618,19 @@ body
 }
 
 // step section
+.section-number
+	position absolute
+	bottom 30px
+	right: 20px
+	font-size: 8vw
+	font-weight: 700
+
+.section-number--light
+	color white
+
 .section-step
+	+below(1024px)
+		display none
 	height: 100vh
 	position relative
 	overflow hidden
@@ -521,7 +640,7 @@ body
 	min-height: 100vh
 	position relative
 	padding: 0
-
+	z-index 1
 .section-bg
 	bg-full()
 	position absolute
@@ -529,7 +648,7 @@ body
 	left 0
 	width: 100%
 	height: 100%
-	background-attachment: fixed
+	//background-attachment: fixed
 	//animation: scale 120s linear infinite
 
 .section__info
@@ -548,6 +667,8 @@ body
 	.section-text
 		margin-top: 0
 .section__wrap
+	+below(768px)
+		width: 90%
 	f()
 	fl()
 	align-items center
@@ -582,10 +703,15 @@ body
 	p
 		&:first-child
 			margin-top: 0
+
+		+below(768px)
+			font-size: 18px
 		font-size: 24px
 		letter-spacing 2px
 		up()
 	li
+		+below(768px)
+			font-size: 18px
 		font-size: 24px
 		margin-bottom: 10px
 		up()
@@ -661,13 +787,15 @@ body
 	margin-top: auto
 
 .lady
+	+below(1200px)
+		padding: 25% 15%
 	position absolute
 	bottom 0
 	left: 5%
 	bg-full()
-	padding: 26% 15%
+	padding: 20% 15%
 	z-index 20
-
+	background-position top center
 .advant
 	margin-top: 5%
 	transform translateX(40%)
@@ -685,9 +813,12 @@ body
 
 // staff
 .staff
+	+below(640px)
+		grid-template-columns: 1fr 1fr
 	display: grid
 	grid-gap 20px
-	grid-template-columns: repeat(6, 1fr)
+	grid-template-columns: repeat(auto-fit, minmax(10rem,180px))
+	justify-content center
 .staff-el__img
 	bg-full()
 	padding: 80% 10%
@@ -703,3 +834,244 @@ body
 	line-height: 1.4
 // staff === end
 
+
+
+.order
+	+below(1024px)
+		width: 100%
+		br(0)
+	+below(640px)
+		padding: 20px
+	width 1000px
+	margin: 0 auto
+	f()
+
+.order-form
+	+below(768px)
+		width: 100%
+		padding: 50px 20px
+
+.form-title
+	font-weight: 700
+	text-align center
+	font-size: 32px
+	margin-bottom: 10px
+
+.form
+	+below(768px)
+		max-width 480px
+	width: 100%
+	max-width 955px
+	margin: 0 auto
+	z-index 5
+.form-text
+	text-align center
+	margin-bottom: 30px
+	font-size: 24px
+	color #525252
+	up()
+	letter-spacing 2.5px
+.input-row
+	+below(640px)
+		fw()
+	flex(between)
+
+.input-row__name
+	+below(640px)
+		width: 100%
+		margin-bottom: 10px
+	width: 30%
+	font-size: 22px
+	up()
+
+.modal-text-true
+	text-align center
+	font-size: 28px
+	font-weight: 700
+	margin-bottom: 10px
+.modal-text-add
+	text-align center
+	line-height: 1.6
+	font-size: 18px
+	width: 80%
+	margin: 0 auto
+
+.true-img
+	size 180px
+	margin: 0 auto
+	margin-bottom: 20px
+
+[class*="ymaps-2"][class*="-ground-pane"]{
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+    -webkit-filter:grayscale(100%);
+}
+
+.map
+	width: 100%
+	height: 600px
+	position relative
+.map__el
+	position absolute
+	top 0
+	left 0
+	width: 100%
+	height: 100%
+
+.contact
+	+below(768px)
+		margin-top: -20px
+	flex(mid)
+	fl()
+	margin-bottom: 60px
+	margin-top: -40px
+.contact-phone
+	+below(768px)
+		font-size: 32px
+	font-size: 80px
+	margin-bottom: 30px
+.contact-soc
+	f()
+	align-items center
+	margin-bottom: 20px
+	.icon
+		margin-right: 30px
+		size 30px
+
+.contact-location
+	+below(768px)
+		width: 80%
+	text-align center
+	line-height: 1.6
+	font-size: 18px
+	margin-bottom: 30px
+
+// slide menu
+.head-toggle
+	+above(1025px)
+		display none
+	size 50px
+	flex(mid)
+	cp()
+	background: white
+	border 1px solid #efefef
+	.icon
+		size 25px
+		fill black
+	.icon-close
+		display: none
+ 
+.head-toggle--open
+	.icon-close
+		display: block
+	.icon-open
+		display: none
+ 
+.slide-menu
+	+below(480px)
+		width: 260px
+	background: black
+	color white
+	position: fixed
+	height: calc(100%) //Отступ хедер
+	z-index 1250
+	top 0
+	left 0
+	padding: 25px
+	width: 320px
+	transform translateX(-100%)
+	tr(all)
+
+.slide-menu-close
+	f()
+	justify-content flex-end
+	margin-bottom: 20px
+	cp()
+	&:hover
+		.icon
+			fill $mark
+	.icon
+		tr()
+		fill white
+		size 24px
+
+.slide-menu--open
+	transform translateX(0%)
+	overflow-y: auto
+.slide-menu__list
+	.nav__el
+		margin 0 0 30px -20px
+		display: flex !important
+		&:hover
+			.nav__el-head
+				color $mark
+			.nav__el-sub
+				color $mark
+	.nav__el-head
+		tr()
+		color white
+		margin-bottom: 0
+	.nav__el-sub
+		tr()
+		color white
+
+.slide-menu__list-el
+	display: block
+	margin-bottom: 40px
+	color white
+	font-size: 16px
+	up()
+	tr(all)
+	&:hover
+		color red
+.body-fix
+	position: fixed!important
+	overflow-Y: scroll!important
+	width:100%!important
+// slide menu === end
+
+.section-order
+	+below(768px)
+		padding: 0
+		.section-title
+			display none
+		.section__info--top
+			padding: 0
+		.section__wrap
+			display none
+
+.map
+	+below(768px)
+		position relative
+		&:before
+			content ''
+			position absolute
+			width: 100%
+			height: 100%
+			left 0
+			top 0
+			z-index 2
+
+.slick-dots
+	display: none !important
+
+.form-get
+	+below(640px)
+		margin: 30px auto
+	max-width 220px
+	margin: 80px auto
+	display block
+	letter-spacing 2.5px
+
+.cell
+	max-height: 100vh
+
+.section-service
+	padding-top: 0
+
+@supports (-webkit-touch-callout: none)
+	.section-main-bg
+		background-attachment initial!important
+	.section-bg
+		background-attachment initial!important
+	.section-main__wrap
+		margin-bottom: 40%

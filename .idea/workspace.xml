@@ -1,41 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33fc4985-0812-4917-a972-022b8742b981" name="Default" comment="fix color input">
-      <change afterPath="$PROJECT_DIR$/app/img/bg-03.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/img/bg-05.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/img/bg-06.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/img/bg-work.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/img/carina.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/img/girl-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/img/igor.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/img/ira.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/img/lana.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/img/logo-kalina.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/img/olga.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/img/svg/instagram.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/img/vladimir.jpg" afterDir="false" />
+    <list default="true" id="33fc4985-0812-4917-a972-022b8742b981" name="Default" comment="add step position">
+      <change afterPath="$PROJECT_DIR$/app/img/bg-01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/img/contact.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/img/port-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/img/port-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/img/port-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/img/port-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/img/port-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/img/wedding.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/img/wine.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/style.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.styl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/css/variable/config/_color.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/variable/config/_color.styl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/css/variable/config/_input.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/variable/config/_input.styl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/variable/config/_typography.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/variable/config/_typography.styl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/elements.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/elements.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/error-404.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/error-404.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/error-500.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/error-500.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/html/block_html/_const.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/block_html/_const.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/html/block_html/_script.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/block_html/_script.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/html/block_html/_style.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/block_html/_style.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/block_html/_svg.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/block_html/_svg.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/html/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/index.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/html/main.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/main.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/css/sprite.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/css/sprite.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/pack.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/pack.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/404.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/bg-01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/bg-02.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/bg-02.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/bg-03.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/bg-03.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/bg-04.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/bg-04.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/bg-05.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/bg-05.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/bg-06.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/bg-06.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/bg-work.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/bg-work.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/carina.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/carina.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/circle.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/circle.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/event-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/event-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/event-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/event-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/event-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/event-3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/event-4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/event-4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/event-5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/event-5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/event-6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/event-6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/event-7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/event-7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/event-8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/event-8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/event-9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/event-9.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/event-lg-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/event-lg-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/event-lg-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/event-lg-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/event-lg-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/event-lg-3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/girl-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/girl-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/girl.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/girl.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/igor.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/igor.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/ira.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/ira.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/lana.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/lana.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/logo-aviator.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/logo-aviator.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/logo-kalina.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/logo-kalina.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/logo-ministerstvo.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/logo-ministerstvo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/main-bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/main-bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/olga.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/olga.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/screen/app/elements.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/elements.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/screen/app/error-404.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/error-404.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/screen/app/error-500.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/error-500.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/img/screen/app/index.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/index.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/img/screen/app/main.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/main.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/sprite.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/sprite.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/svg/sprite.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/svg/sprite.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/screen/app/modal.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/modal.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/service-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/service-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/service-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/service-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/service-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/service-3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/service-4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/service-4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/service-5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/service-5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/service-6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/service-6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/service-7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/service-7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/service-8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/service-8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/vladimir.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/vladimir.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/modal.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/modal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/module/modal/_modal.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/module/modal/_modal.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower.json" beforeDir="false" afterPath="$PROJECT_DIR$/bower.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,10 +111,10 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\PROJECT\WORK\WEDDING\app\img" />
+      <recent name="E:\PROJECT\WORK\WEDDING\dist\js" />
       <recent name="E:\PROJECT\WORK\WEDDING\app\img\svg" />
       <recent name="E:\PROJECT\WORK\WEDDING\app\bower" />
       <recent name="E:\PROJECT\WORK\WEDDING" />
-      <recent name="E:\PROJECT\WORK\WEDDING\app\fonts" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -155,7 +198,10 @@
       <workItem from="1590574811300" duration="4680000" />
       <workItem from="1591100607518" duration="14505000" />
       <workItem from="1591120151707" duration="931000" />
-      <workItem from="1591188163392" duration="17458000" />
+      <workItem from="1591188163392" duration="18150000" />
+      <workItem from="1591262587776" duration="21681000" />
+      <workItem from="1591350717856" duration="6640000" />
+      <workItem from="1591617637759" duration="20212000" />
     </task>
     <task id="LOCAL-00001" summary="fix browsersynk">
       <created>1515935102048</created>
@@ -423,7 +469,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590582208471</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="add step position">
+      <created>1591209285221</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1591209285221</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -461,7 +514,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="small fix" />
     <MESSAGE value="add workspace" />
     <MESSAGE value="fix gulp version" />
     <MESSAGE value="fix svg parser" />
@@ -486,18 +538,23 @@
     <MESSAGE value="fix location fonts + scripts" />
     <MESSAGE value="add version 3.0.1" />
     <MESSAGE value="fix color input" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix color input" />
+    <MESSAGE value="add step position" />
+    <option name="LAST_COMMIT_MESSAGE" value="add step position" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-1753" y="-103" key="CommitChangelistDialog2" timestamp="1590582207066">
+    <state x="-1753" y="-103" key="CommitChangelistDialog2" timestamp="1591209281186">
       <screen x="-2560" y="-256" width="2560" height="1400" />
     </state>
-    <state x="-1753" y="-103" key="CommitChangelistDialog2/-2560.-256.2560.1400/0.0.1920.1040/1920.166.1280.984@-2560.-256.2560.1400" timestamp="1589374749464" />
+    <state x="-1753" y="-103" key="CommitChangelistDialog2/-2560.-256.2560.1400/0.0.1920.1040/1920.166.1280.984@-2560.-256.2560.1400" timestamp="1591209281186" />
     <state x="-1753" y="-103" key="CommitChangelistDialog2/0.0.1920.1040/1920.166.1280.984/-2560.-256.2560.1400@-2560.-256.2560.1400" timestamp="1590582207066" />
-    <state x="-1500" y="199" key="FileChooserDialogImpl" timestamp="1591189046200">
+    <state x="-2468" y="-164" width="2376" height="1216" key="DiffContextDialog" timestamp="1591272168095">
       <screen x="-2560" y="-256" width="2560" height="1400" />
     </state>
-    <state x="-1500" y="199" key="FileChooserDialogImpl/-2560.-256.2560.1400/0.0.1920.1040/1920.166.1280.984@-2560.-256.2560.1400" timestamp="1591189046200" />
+    <state x="-2468" y="-164" width="2376" height="1216" key="DiffContextDialog/-2560.-256.2560.1400/0.0.1920.1040/1920.166.1280.984@-2560.-256.2560.1400" timestamp="1591272168095" />
+    <state x="-1500" y="199" key="FileChooserDialogImpl" timestamp="1591286699459">
+      <screen x="-2560" y="-256" width="2560" height="1400" />
+    </state>
+    <state x="-1500" y="199" key="FileChooserDialogImpl/-2560.-256.2560.1400/0.0.1920.1040/1920.166.1280.984@-2560.-256.2560.1400" timestamp="1591286699459" />
     <state x="-1407" y="345" key="Github.ShareDialog" timestamp="1591117422858">
       <screen x="-2560" y="-256" width="2560" height="1400" />
     </state>
@@ -510,19 +567,20 @@
       <screen x="-2560" y="-256" width="2560" height="1400" />
     </state>
     <state x="-1779" y="87" key="SettingsEditor/-2560.-256.2560.1400/0.0.1920.1040/1920.166.1280.984@-2560.-256.2560.1400" timestamp="1591117406149" />
-    <state x="-2560" y="-256" key="Vcs.Push.Dialog.v2" timestamp="1590582212926">
+    <state x="-2560" y="-256" key="Vcs.Push.Dialog.v2" timestamp="1591209290489">
       <screen x="-2560" y="-256" width="2560" height="1400" />
     </state>
-    <state x="-2560" y="-256" key="Vcs.Push.Dialog.v2/-2560.-256.2560.1400/0.0.1920.1040/1920.166.1280.984@-2560.-256.2560.1400" timestamp="1589374754599" />
+    <state x="-2560" y="-256" key="Vcs.Push.Dialog.v2/-2560.-256.2560.1400/0.0.1920.1040/1920.166.1280.984@-2560.-256.2560.1400" timestamp="1591209290489" />
     <state x="-2560" y="-256" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.166.1280.984/-2560.-256.2560.1400@-2560.-256.2560.1400" timestamp="1590582212926" />
-    <state x="-1566" y="181" width="571" height="526" key="find.popup" timestamp="1591196708338">
+    <state x="-1566" y="181" width="571" height="526" key="find.popup" timestamp="1591637185136">
       <screen x="-2560" y="-256" width="2560" height="1400" />
     </state>
-    <state x="-1566" y="181" width="571" height="526" key="find.popup/-2560.-256.2560.1400/0.0.1920.1040/1920.166.1280.984@-2560.-256.2560.1400" timestamp="1591196708338" />
-    <state x="-1617" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1591189098673">
+    <state x="-1566" y="181" width="571" height="526" key="find.popup/-2560.-256.2560.1400/0.0.1920.1040/1920.166.1280.984@-2560.-256.2560.1400" timestamp="1591359193105" />
+    <state x="-1566" y="181" width="571" height="526" key="find.popup/0.0.1920.1040/1920.166.1280.984/-2560.-256.2560.1400@-2560.-256.2560.1400" timestamp="1591637185136" />
+    <state x="-1617" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1591645478769">
       <screen x="-2560" y="-256" width="2560" height="1400" />
     </state>
-    <state x="-1617" y="59" width="672" height="678" key="search.everywhere.popup/-2560.-256.2560.1400/0.0.1920.1040/1920.166.1280.984@-2560.-256.2560.1400" timestamp="1591189098673" />
-    <state x="-1617" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.166.1280.984/-2560.-256.2560.1400@-2560.-256.2560.1400" timestamp="1590582171196" />
+    <state x="-1617" y="59" width="672" height="678" key="search.everywhere.popup/-2560.-256.2560.1400/0.0.1920.1040/1920.166.1280.984@-2560.-256.2560.1400" timestamp="1591359432849" />
+    <state x="-1617" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.166.1280.984/-2560.-256.2560.1400@-2560.-256.2560.1400" timestamp="1591645478769" />
   </component>
 </project>

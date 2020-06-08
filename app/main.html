@@ -20,8 +20,8 @@
     <link rel="stylesheet" href="bower/slick-carousel/slick/slick.css" />
     <link rel="stylesheet" href="bower/slick-carousel/slick/slick-theme.css" />
     <link rel="stylesheet" href="bower/fancybox/dist/jquery.fancybox.css" />
-    <link rel="stylesheet" href="bower/animate.css/animate.css" />
-    <link rel="stylesheet" href="bower/aos/dist/aos.css" />
+    <!--link(rel="stylesheet", href="bower/animate.css/animate.css")-->
+    <!--link(rel="stylesheet", href="bower/aos/dist/aos.css")-->
     <!--link(rel="stylesheet", href="bower/jquery-nice-select/css/nice-select.css")-->
     <!--link(rel="stylesheet", href="bower/ion.rangeSlider/css/ion.rangeSlider.css")-->
     <!--endbuild-->
@@ -35,26 +35,56 @@
         <!--block header end-->
         <div class="content">
             <div class="header">
+                <div class="head-toggle">
+                    <svg class="icon icon-open">
+                        <use xlink:href="#menu"></use>
+                    </svg>
+                </div>
                 <div class="nav" data-aos="fade-down" data-aos-delay="1000" data-aos-duration="2500">
-                    <a class="nav__el" href="#">
+                    <a class="nav__el" href="#about" rel="m_PageScroll2id">
                         <div class="nav__el-head">About us</div>
                         <div class="nav__el-sub">О нас</div>
                     </a>
-                    <a class="nav__el" href="#">
+                    <a class="nav__el" href="#service" rel="m_PageScroll2id">
                         <div class="nav__el-head">Services</div>
                         <div class="nav__el-sub">Услуги</div>
                     </a>
-                    <a class="nav__el" href="#">
+                    <a class="nav__el" href="#portfolio" rel="m_PageScroll2id">
                         <div class="nav__el-head">Portfolio</div>
                         <div class="nav__el-sub">Портфолио</div>
                     </a>
-                    <a class="nav__el" href="#">
+                    <a class="nav__el" href="#contact" rel="m_PageScroll2id">
                         <div class="nav__el-head">Contacts</div>
                         <div class="nav__el-sub">Контакты</div>
                     </a>
                 </div>
                 <div class="logo nav" data-aos="fade" data-aos-delay="2000" data-aos-duration="2500">
                     <img src="img/logo.png" alt="" />
+                </div>
+            </div>
+            <div class="slide-menu">
+                <div class="slide-menu-close">
+                    <svg class="icon icon-close">
+                        <use xlink:href="#close"></use>
+                    </svg>
+                </div>
+                <div class="slide-menu__list">
+                    <a class="nav__el" href="#about" rel="m_PageScroll2id">
+                        <div class="nav__el-head">About us</div>
+                        <div class="nav__el-sub">О нас</div>
+                    </a>
+                    <a class="nav__el" href="#service" rel="m_PageScroll2id">
+                        <div class="nav__el-head">Services</div>
+                        <div class="nav__el-sub">Услуги</div>
+                    </a>
+                    <a class="nav__el" href="#portfolio" rel="m_PageScroll2id">
+                        <div class="nav__el-head">Portfolio</div>
+                        <div class="nav__el-sub">Портфолио</div>
+                    </a>
+                    <a class="nav__el" href="#contact" rel="m_PageScroll2id">
+                        <div class="nav__el-head">Contacts</div>
+                        <div class="nav__el-sub">Контакты</div>
+                    </a>
                 </div>
             </div>
             <!--section main-->
@@ -65,18 +95,18 @@
                         <div class="section-main__title" data-aos="fade" data-aos-delay="500" data-aos-duration="3000">She said
                             <span>yes...</span>
                         </div>
-                        <a class="section-main__get" href="#" data-aos="fade-up" data-aos-delay="3000" data-aos-duration="2000" data-aos-offset="-200">Оставить заявку</a>
+                        <a class="section-main__get" href="#order" rel="m_PageScroll2id" data-aos="fade-up" data-aos-delay="3000" data-aos-duration="2000" data-aos-offset="-200">Оставить заявку</a>
                     </div>
                 </div>
             </div>
             <!--section about-->
-            <div class="section section-about">
+            <div class="section section-about" id="about">
                 <div class="bg-text bg-text--about" data-aos="fade" data-aos-duration="3000">About us</div>
                 <div class="section-title" data-aos="fade" data-aos-duration="3000">
                     <div class="section-title__head">О нас</div>
                     <div class="section-title__text">About us</div>
                 </div>
-                <div class="about-text text">
+                <div class="about-text text" data-aos="fade" data-aos-duration="3000">
                     <p>Мы свадебное агентство “YES WEDDING”</p>
                     <p>Самое главное для нас - это Вы и то особенное чувство, которое соединяет сердца и судьбы людей. Каждое событие для нас бриллиант, которому нужна красивая огранка, каждая история уникальна, каждый человек это целый мир и вместе с вами
                         мы создадим то, что будет с трепетом вспоминаться долгие годы, а дни до события будут предвкушением волшебства.</p>
@@ -127,7 +157,7 @@
                 </div>
             </div>
             <!--section service description-->
-            <div class="section section--clear section--overflow">
+            <div class="section section--clear section--overflow" id="service">
                 <div class="circle circle--left" style="background-image:url('img/circle.png')"></div>
                 <div class="circle circle--right" style="background-image:url('img/circle.png')"></div>
                 <div class="girl" style="background-image:url('img/girl.png')" data-aos="fade" data-aos-delay="1000" data-aos-duration="3000" data-aos-offset="200"></div>
@@ -136,7 +166,7 @@
                     <div class="section-title__head">услуги и сервис</div>
                     <div class="section-title__text">Service</div>
                 </div>
-                <div class="service-text text">
+                <div class="service-text text" data-aos="fade" data-aos-duration="3000" data-aos-offset="-200">
                     <p>Вы сможете наслаждаться предсвадебным периодом, а мы в это время:</p>
                     <p>1. Подберем и предложим вам площадки</p>
                     <p>2. Создадим несколько концепций мероприятия на ваш выбор</p>
@@ -151,10 +181,10 @@
                 </div>
             </div>
             <!--section portfolio-->
-            <div class="section section-portfolio">
+            <div class="section section-portfolio" id="portfolio">
                 <div class="section-title">
-                    <div class="section-title__head" data-aos="fade" data-aos-duration="3000">портфолио</div>
-                    <div class="section-title__text" data-aos="fade" data-aos-duration="3000">Portfolio</div>
+                    <div class="section-title__head" data-aos="fade" data-aos-duration="3000" data-aos-offset="-200">портфолио</div>
+                    <div class="section-title__text" data-aos="fade" data-aos-duration="3000" data-aos-offset="-200">Portfolio</div>
                 </div>
                 <div class="main-cont">
                     <div class="portfolio-slider">
@@ -333,7 +363,7 @@
                             <p>Есть площадки с которыми мы особенно дружны
                                 <br>и любим делать мероприятия вместе</p>
                         </div>
-                        <div class="company">
+                        <div class="company" data-aos="fade" data-aos-duration="3000" data-aos-offset="-200">
                             <a class="company__el" href="#">
                                 <div class="company__el-img">
                                     <img src="img/logo-ministerstvo.png" alt="" />
@@ -372,13 +402,13 @@
                         <div class="section-text text">
                             <p>За долгие годы работы мы знаем, что лучшее мероприятие то, на котором хорошо кормят. У нас есть собственная служба кейтеринга для того, чтобы мы точно знали, что на вашей свадьбе все будет вкусно.</p>
                         </div>
-                        <div class="logo-kalina">
+                        <div class="logo-kalina" data-aos="fade" data-aos-duration="3000" data-aos-offset="-400">
                             <img src="img/logo-kalina.png" alt="" />
                         </div>
                     </div>
                 </div>
             </div>
-            <!--step 07-->
+            <!--advant-->
             <div class="section-step section-step-07">
                 <div class="circle circle--right" style="background-image:url('img/circle.png')"></div>
                 <div class="lady" style="background-image:url('img/girl-2.png')" data-aos="fade" data-aos-delay="200" data-aos-duration="3000" data-aos-offset="200"></div>
@@ -404,7 +434,7 @@
                     <div class="section-title__text" data-aos="fade" data-aos-duration="3000">Our Team</div>
                 </div>
                 <div class="main-cont">
-                    <div class="staff">
+                    <div class="staff" data-aos="fade" data-aos-duration="3000" data-aos-offset="-400">
                         <div class="staff-el">
                             <div class="staff-el__img" style="background-image:url('img/olga.jpg')"></div>
                             <div class="staff-el__name">Ольга</div>
@@ -444,6 +474,7 @@
                     </div>
                 </div>
             </div>
+            <!-- works-->
             <div class="section-step--height section-step-07">
                 <div class="section-bg" style="background-image:url('img/bg-work.jpg')"></div>
                 <div class="section__info section__info--top">
@@ -452,7 +483,7 @@
                             <div class="section-title__head" data-aos="fade" data-aos-duration="3000" data-aos-offset="-400">Наша работа</div>
                             <div class="section-title__text" data-aos="fade" data-aos-duration="3000" data-aos-offset="-400">Our Work</div>
                         </div>
-                        <div class="work-text text">
+                        <div class="work-text text" data-aos="fade" data-aos-duration="3000" data-aos-offset="-400">
                             <p>Как мы строим нашу работу:</p>
                             <ol>
                                 <li>Заявка</li>
@@ -470,15 +501,109 @@
                     </div>
                 </div>
             </div>
+            <!--order-->
+            <div class="section section-order" data-aos="fade" data-aos-duration="3000" data-aos-offset="-400">
+                <div class="section__info section__info--top">
+                    <div class="bg-text bg-text--about" data-aos="fade" data-aos-duration="3000">Request</div>
+                    <div class="section__wrap section__wrap--full">
+                        <div class="section-title section-title--bottom-extend">
+                            <div class="section-title__head" id="order" data-aos="fade" data-aos-duration="3000" data-aos-offset="-400">Заявка</div>
+                            <div class="section-title__text" data-aos="fade" data-aos-duration="3000" data-aos-offset="-400">Request</div>
+                        </div>
+                    </div>
+                    <div class="order">
+                        <div class="order-img" style="background-image:url('img/contact.jpg')"></div>
+                        <div class="order-form">
+                            <div class="form-title">Напишите нам</div>
+                            <div class="form-text">Мы свяжемся с вами в течении 5 минут</div>
+                            <div class="form">
+                                <form class="validate-form" action="javascript:void(null);">
+                                    <div class="input-row">
+                                        <input class="input" type="text" name="name" placeholder="Ваше имя" />
+                                    </div>
+                                    <div class="input-row">
+                                        <input class="input" type="text" name="phone" placeholder="Ваш телефон" />
+                                    </div>
+                                    <div class="input-row">
+                                        <input class="input" type="text" name="mail" placeholder="Ваш email" />
+                                    </div>
+                                    <!--.input-row-->
+                                    <!--	input(type="text" name="date" placeholder="Когда у вас будет свадьба").input-->
+                                    <!--.input-row-->
+                                    <!--	input(type="text" name="number" placeholder="Сколько у вас будет гостей").input-->
+                                    <div class="input-row">
+                                        <textarea class="input" name="info" cols="30" rows="5" placeholder="Сообщение"></textarea>
+                                    </div>
+                                    <input class="modal-send btn--md btn--mark" type="submit" value="Отправить заявку" />
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--step 03-->
+            <div class="section section--contact" id="contact">
+                <div class="bg-gradient bg-gradient--top"></div>
+                <div class="section__info section__info--top">
+                    <div class="section__wrap">
+                        <div class="section-title section-title--bottom">
+                            <div class="section-title__head" data-aos="fade" data-aos-duration="3000" data-aos-offset="-400">Контакты</div>
+                            <div class="section-title__text" data-aos="fade" data-aos-duration="3000" data-aos-offset="-400">Contacts</div>
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <a class="contact-phone" href="tel:+7(495)744-11-50">+7(495)744-11-50</a>
+                        <div class="contact-location">Агентство 5 звёзд Столешников переулок, дом 6, стр. 3
+                            <br>Москва, 125009 Россия</div>
+                        <a class="contact-soc" href="#">
+                            <svg class="icon">
+                                <use xlink:href="#instagram"></use>
+                            </svg>
+                            <span>@yeswedding_official</span>
+                        </a>
+                        <a class="contact-soc" href="mailto:info@yeswedding.me">
+                            <svg class="icon">
+                                <use xlink:href="#mail"></use>
+                            </svg>
+                            <span>info@yeswedding.me</span>
+                        </a>
+                    </div>
+                    <div class="map">
+                        <div class="map__el">
+                            <script type="text/javascript" charset="utf-8" async="async" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A10abfe2defb359fc206ea5c2df8ba84c0bba5ddff82a3446c869dc4a49cb1783&amp;amp;width=100%&amp;amp;height=100%&amp;amp;lang=ru_RU&amp;amp;scroll=false;touch=false"></script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-layer">
+        <div class="modal-filter"></div>
+        <div class="modal-wrap">
+            <div class="modal modal--true" data-modal="trueMsg">
+                <div class="modal-content">
+                    <div class="modal-close">
+                        <svg class="icon">
+                            <use xlink:href="#close-fat"></use>
+                        </svg>
+                    </div>
+                    <img class="true-img" src="img/wine.svg" alt="" />
+                    <div class="modal-text-true">Сообщение отправленно</div>
+                    <div class="modal-text-add">Спасибо за ваше время, мы скоро свяжемся с вами</div>
+                </div>
+            </div>
         </div>
     </div>
     <!--block footer-->
     <!--block footer end-->
     <!--build:js ./js/combined.js-->
-    <script src="bower/jquery/dist/jquery.js"></script>
+    <script src="bower/jquery/jquery.js"></script>
     <script src="bower/slick-carousel/slick/slick.js"></script>
     <script src="bower/fancybox/dist/jquery.fancybox.js"></script>
-    <script src="bower/aos/dist/aos.js"></script>
+    <!--script(src="bower/aos/dist/aos.js")-->
+    <script src="/bower/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="bower/page-scroll-to-id/jquery.malihu.PageScroll2id.js"></script>
+    <script src="bower/fullpage.js/dist/jquery.fullpage.js"></script>
     <!--script(src='bower/jquery.nicescroll/jquery.nicescroll.min.js')-->
     <!--script(src='bower/jquery-nice-select/js/jquery.nice-select.min.js')-->
     <!--script(src="bower/ion.rangeSlider/js/ion.rangeSlider.js")-->

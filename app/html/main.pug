@@ -5,21 +5,40 @@ include block_html/_include.pug
 	+header()
 	.content
 		.header
+			.head-toggle
+				+icon("menu","icon icon-open")
 			.nav(data-aos="fade-down" data-aos-delay="1000" data-aos-duration="2500")
-				a(href="#").nav__el
+				a(href="#about" rel='m_PageScroll2id').nav__el
 					.nav__el-head About us
 					.nav__el-sub О нас
-				a(href="#").nav__el
+				a(href="#service" rel='m_PageScroll2id').nav__el
 					.nav__el-head Services
 					.nav__el-sub Услуги
-				a(href="#").nav__el
+				a(href="#portfolio" rel='m_PageScroll2id').nav__el
 					.nav__el-head Portfolio
 					.nav__el-sub Портфолио
-				a(href="#").nav__el
+				a(href="#contact" rel='m_PageScroll2id').nav__el
 					.nav__el-head Contacts
 					.nav__el-sub Контакты
 			.logo.nav(data-aos="fade" data-aos-delay="2000" data-aos-duration="2500")
 				img(src="img/logo.png", alt="")
+
+		.slide-menu
+			.slide-menu-close
+				+icon("close","icon icon-close")
+			.slide-menu__list
+				a(href="#about" rel='m_PageScroll2id').nav__el
+					.nav__el-head About us
+					.nav__el-sub О нас
+				a(href="#service" rel='m_PageScroll2id').nav__el
+					.nav__el-head Services
+					.nav__el-sub Услуги
+				a(href="#portfolio" rel='m_PageScroll2id').nav__el
+					.nav__el-head Portfolio
+					.nav__el-sub Портфолио
+				a(href="#contact" rel='m_PageScroll2id').nav__el
+					.nav__el-head Contacts
+					.nav__el-sub Контакты
 
 		//section main
 		.section-main
@@ -27,15 +46,15 @@ include block_html/_include.pug
 			.section-main__info
 				.section-main__wrap
 					.section-main__title(data-aos="fade"  data-aos-delay="500" data-aos-duration="3000") She said <span>yes...</span>
-					a(href="#" data-aos="fade-up" data-aos-delay="3000" data-aos-duration="2000" data-aos-offset="-200").section-main__get Оставить заявку
+					a(href="#order" rel='m_PageScroll2id' data-aos="fade-up" data-aos-delay="3000" data-aos-duration="2000" data-aos-offset="-200").section-main__get Оставить заявку
 
 		//section about
-		.section.section-about
+		.section.section-about#about
 			.bg-text.bg-text--about(data-aos="fade"  data-aos-duration="3000") About us
 			.section-title(data-aos="fade"  data-aos-duration="3000")
 				.section-title__head О нас
 				.section-title__text About us
-			.about-text.text
+			.about-text.text(data-aos="fade" data-aos-duration="3000" )
 				p Мы свадебное агентство “YES WEDDING”
 				p Самое главное для нас - это Вы и то особенное чувство, которое соединяет сердца и судьбы людей. Каждое событие для нас бриллиант, которому нужна красивая огранка, каждая история уникальна, каждый человек это целый мир и вместе с вами мы создадим то, что будет с трепетом вспоминаться долгие годы, а дни до события будут предвкушением волшебства.
 				p Наша бесконечная любовь к своему делу, 20 летний опыт организации мероприятий, проверенная база подрядчиков, большая команда, в которой каждый от дизайнера до технического директора творец, помогают делать нам ваши мероприятия особенными и впечатляющими.
@@ -71,7 +90,7 @@ include block_html/_include.pug
 				.service-slogan(data-aos="fade-right"  data-aos-duration="3000") Follow your heart...
 
 		//section service description
-		.section.section--clear.section--overflow
+		.section.section--clear.section--overflow#service
 			.circle.circle--left(style="background-image:url('img/circle.png')")
 			.circle.circle--right(style="background-image:url('img/circle.png')")
 
@@ -81,7 +100,7 @@ include block_html/_include.pug
 			.section-title(data-aos="fade"  data-aos-duration="3000")
 				.section-title__head услуги и сервис
 				.section-title__text Service
-			.service-text.text
+			.service-text.text(data-aos="fade"  data-aos-duration="3000" data-aos-offset="-200")
 				p Вы сможете наслаждаться предсвадебным периодом, а мы в это время:
 
 				p 1. Подберем и предложим вам площадки
@@ -104,10 +123,10 @@ include block_html/_include.pug
 				p А в день свадьбы мы обязательно будем рядом, проследим за всеми деталями и будем переживать с вами эти волнительные минуты дня рождения вашей семьи и все обязательно будет хорошо.
 
 		//section portfolio
-		.section.section-portfolio
+		.section.section-portfolio#portfolio
 			.section-title
-				.section-title__head(data-aos="fade"  data-aos-duration="3000") портфолио
-				.section-title__text(data-aos="fade"  data-aos-duration="3000") Portfolio
+				.section-title__head(data-aos="fade"  data-aos-duration="3000" data-aos-offset="-200") портфолио
+				.section-title__text(data-aos="fade"  data-aos-duration="3000" data-aos-offset="-200") Portfolio
 			.main-cont
 				.portfolio-slider
 					- for (var i=0;i<4;i++)
@@ -192,7 +211,7 @@ include block_html/_include.pug
 						.section-title__text(data-aos="fade" data-aos-duration="3000" data-aos-offset="-400") Loft
 					.section-text.text
 						p Есть площадки с которыми мы особенно дружны<br> и любим делать мероприятия вместе
-					.company
+					.company(data-aos="fade" data-aos-duration="3000" data-aos-offset="-200")
 						a(href="#").company__el
 							.company__el-img
 								img(src="img/logo-ministerstvo.png", alt="")
@@ -219,9 +238,10 @@ include block_html/_include.pug
 					.section-text.text
 						p За долгие годы работы мы знаем, что лучшее мероприятие то, на котором хорошо кормят. У нас есть собственная служба кейтеринга для того, чтобы мы точно знали, что на вашей свадьбе все будет вкусно.
 
-					.logo-kalina
+					.logo-kalina(data-aos="fade" data-aos-duration="3000" data-aos-offset="-400")
 						img(src="img/logo-kalina.png", alt="")
-		//step 07
+
+		//advant
 		.section-step.section-step-07
 			.circle.circle--right(style="background-image:url('img/circle.png')")
 			.lady(style="background-image:url('img/girl-2.png')" data-aos="fade"  data-aos-delay="200" data-aos-duration="3000" data-aos-offset="200")
@@ -241,7 +261,7 @@ include block_html/_include.pug
 				.section-title__head(data-aos="fade"  data-aos-duration="3000") Наша команда. Знакомьтесь.
 				.section-title__text(data-aos="fade"  data-aos-duration="3000") Our Team
 			.main-cont
-				.staff
+				.staff(data-aos="fade" data-aos-duration="3000" data-aos-offset="-400")
 					.staff-el
 						.staff-el__img(style="background-image:url('img/olga.jpg')")
 						.staff-el__name Ольга
@@ -272,6 +292,8 @@ include block_html/_include.pug
 						.staff-el__name Карина
 						.staff-el__location Банкетный менеджер
 						.staff-el__info Производит точнейшие расчеты необходимого количества еды и алкоголя.
+
+		// works
 		.section-step--height.section-step-07
 			.section-bg(style="background-image:url('img/bg-work.jpg')")
 			.section__info.section__info--top
@@ -280,7 +302,7 @@ include block_html/_include.pug
 						.section-title__head(data-aos="fade" data-aos-duration="3000" data-aos-offset="-400") Наша работа
 
 						.section-title__text(data-aos="fade" data-aos-duration="3000" data-aos-offset="-400") Our Work
-					.work-text.text
+					.work-text.text(data-aos="fade" data-aos-duration="3000" data-aos-offset="-400")
 						p Как мы строим нашу работу:
 						ol
 							li Заявка
@@ -295,10 +317,69 @@ include block_html/_include.pug
 							li Встреча, обсуждение мероприятия. Обнимашки.
 
 
+		//order
+		.section.section-order(data-aos="fade" data-aos-duration="3000" data-aos-offset="-400")
+			.section__info.section__info--top
+				.bg-text.bg-text--about(data-aos="fade"  data-aos-duration="3000") Request
+				.section__wrap.section__wrap--full
+					.section-title.section-title--bottom-extend
+						.section-title__head#order(data-aos="fade" data-aos-duration="3000" data-aos-offset="-400") Заявка
+						.section-title__text(data-aos="fade" data-aos-duration="3000" data-aos-offset="-400") Request
+				.order
+					.order-img(style="background-image:url('img/contact.jpg')")
+					.order-form
+						.form-title Напишите нам
+						.form-text Мы свяжемся с вами в течении 5 минут
+						.form
+							form.validate-form( action="javascript:void(null);")
+								.input-row
+									input(type="text" name="name" placeholder="Ваше имя").input
+								.input-row
+									input(type="text" name="phone" placeholder="Ваш телефон").input
+								.input-row
+									input(type="text" name="mail" placeholder="Ваш email").input
+								//.input-row
+								//	input(type="text" name="date" placeholder="Когда у вас будет свадьба").input
+								//.input-row
+								//	input(type="text" name="number" placeholder="Сколько у вас будет гостей").input
+								.input-row
+									textarea(name="info", cols="30", rows="5" placeholder="Сообщение").input
+								input(type="submit" value="Отправить заявку").modal-send.btn--md.btn--mark
+
+		//step 03
+		.section.section--contact#contact
+			.bg-gradient.bg-gradient--top
+			.section__info.section__info--top
+				.section__wrap
+					.section-title.section-title--bottom
+						.section-title__head(data-aos="fade" data-aos-duration="3000" data-aos-offset="-400") Контакты
+						.section-title__text(data-aos="fade" data-aos-duration="3000" data-aos-offset="-400") Contacts
+				.contact
+					a(href="tel:+7(495)744-11-50").contact-phone +7(495)744-11-50
+					.contact-location Агентство 5 звёзд Столешников переулок, дом 6, стр. 3 <br> Москва, 125009 Россия
+					a(href="#").contact-soc
+						+icon("instagram","icon")
+						span @yeswedding_official
+					a(href="mailto:info@yeswedding.me").contact-soc
+						+icon("mail","icon")
+						span info@yeswedding.me
+				.map
+					.map__el
+						script(type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A10abfe2defb359fc206ea5c2df8ba84c0bba5ddff82a3446c869dc4a49cb1783&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=false;touch=false")
 
 
 
 
+.modal-layer
+	.modal-filter
+	.modal-wrap
+		.modal.modal--true(data-modal="trueMsg")
+			.modal-content
+				.modal-close
+					+icon("close-fat","icon")
+				img(src="img/wine.svg", alt="").true-img
+				.modal-text-true Сообщение отправленно
+				.modal-text-add Спасибо за ваше время, мы скоро свяжемся с вами
 
 
 
