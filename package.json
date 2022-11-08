@@ -9,7 +9,7 @@
     "browser-sync": "2.18.11",
     "create-file": "^1.0.1",
     "emitty": "^1.4.0",
-    "gulp": "3.9.1",
+    "gulp": "4.0.2",
     "gulp-autoprefixer": "^2.3.1",
     "gulp-cached": "^1.1.1",
     "gulp-cheerio": "^0.6.2",
@@ -23,7 +23,7 @@
     "gulp-newer": "*",
     "gulp-notify": "^2.2.0",
     "gulp-prettify": "^0.4.0",
-    "gulp-progeny": "0.2.2",
+    "gulp-progeny": "0.4.1",
     "gulp-pug": "^3.3.0",
     "gulp-remember": "^0.3.0",
     "gulp-rename": "^1.2.2",
@@ -32,7 +32,7 @@
     "gulp-svg-sprites": "^4.0.2",
     "gulp-svgmin": "^1.2.3",
     "gulp-uglify": "^1.2.0",
-    "gulp-useref": "^1.2.0",
+    "gulp-useref": "^5.0.0",
     "gulp-util": "^3.0.6",
     "gulp-webshot": "^0.2.3",
     "imagemin-mozjpeg": "5.1.0",
@@ -41,6 +41,6 @@
     "process-nextick-args": "^1.0.7",
     "run-sequence": "^1.1.5",
     "rupture": "^0.6.1",
-    "vinyl-ftp": "^0.4.4"
+    "vinyl-ftp": "^0.6.1"
   }
 }
